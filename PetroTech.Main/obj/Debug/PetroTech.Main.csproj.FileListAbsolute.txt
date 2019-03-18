@@ -1,0 +1,622 @@
+D:\Internal Project\PetroTech\PetroTech.Main\bin\ApplicationInsights.config
+D:\Internal Project\PetroTech\PetroTech.Main\bin\PetroTech.Main.dll.config
+D:\Internal Project\PetroTech\PetroTech.Main\bin\PetroTech.Main.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\PetroTech.Main.pdb
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\csc.exe
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\csc.exe.config
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\csc.rsp
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\csi.exe
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\csi.exe.config
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\csi.rsp
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.AppContext.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.Collections.Immutable.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.Console.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.IO.Compression.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.IO.FileSystem.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.IO.Pipes.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.Reflection.Metadata.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.Security.AccessControl.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.Security.Claims.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.ValueTuple.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.Xml.XPath.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\vbc.exe
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\vbc.exe.config
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\vbc.rsp
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\VBCSCompiler.exe
+D:\Internal Project\PetroTech\PetroTech.Main\bin\roslyn\VBCSCompiler.exe.config
+D:\Internal Project\PetroTech\PetroTech.Main\bin\Antlr3.Runtime.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\Microsoft.AI.DependencyCollector.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\Microsoft.AI.Web.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\Microsoft.AI.WindowsServer.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\Microsoft.ApplicationInsights.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\Microsoft.Web.Infrastructure.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\Newtonsoft.Json.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Net.Http.Formatting.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Web.Helpers.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Web.Http.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Web.Http.WebHost.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Web.Mvc.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Web.Optimization.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Web.Razor.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Web.WebPages.Deployment.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Web.WebPages.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Web.WebPages.Razor.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\WebGrease.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Web.Helpers.xml
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Web.Mvc.xml
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Web.Optimization.xml
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Web.Razor.xml
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Web.WebPages.xml
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Web.WebPages.Deployment.xml
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Web.WebPages.Razor.xml
+D:\Internal Project\PetroTech\PetroTech.Main\bin\Newtonsoft.Json.xml
+D:\Internal Project\PetroTech\PetroTech.Main\bin\Antlr3.Runtime.pdb
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Net.Http.Formatting.xml
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Web.Http.xml
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Web.Http.WebHost.xml
+D:\Internal Project\PetroTech\PetroTech.Main\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Internal Project\PetroTech\PetroTech.Main\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Internal Project\PetroTech\PetroTech.Main\bin\Microsoft.AI.DependencyCollector.xml
+D:\Internal Project\PetroTech\PetroTech.Main\bin\Microsoft.AI.WindowsServer.xml
+D:\Internal Project\PetroTech\PetroTech.Main\bin\Microsoft.AI.Web.xml
+D:\Internal Project\PetroTech\PetroTech.Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Internal Project\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.csprojAssemblyReference.cache
+D:\Internal Project\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.csproj.CoreCompileInputs.cache
+D:\Internal Project\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.csproj.CopyComplete
+D:\Internal Project\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.dll
+D:\Internal Project\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.pdb
+D:\Internal Project\PetroTech\PetroTech.Main\bin\EntityFramework.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\EntityFramework.SqlServer.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\PetroTech.Common.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\PetroTech.Data.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\PetroTech.Model.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\PetroTech.Service.dll
+D:\Internal Project\PetroTech\PetroTech.Main\bin\PetroTech.Common.pdb
+D:\Internal Project\PetroTech\PetroTech.Main\bin\PetroTech.Data.pdb
+D:\Internal Project\PetroTech\PetroTech.Main\bin\PetroTech.Data.dll.config
+D:\Internal Project\PetroTech\PetroTech.Main\bin\PetroTech.Model.pdb
+D:\Internal Project\PetroTech\PetroTech.Main\bin\PetroTech.Model.dll.config
+D:\Internal Project\PetroTech\PetroTech.Main\bin\PetroTech.Service.pdb
+D:\Internal Project\PetroTech\PetroTech.Main\bin\EntityFramework.xml
+D:\Internal Project\PetroTech\PetroTech.Main\bin\EntityFramework.SqlServer.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\ApplicationInsights.config
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\PetroTech.Main.dll.config
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\PetroTech.Main.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\PetroTech.Main.pdb
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\csc.exe
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\csc.exe.config
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\csc.rsp
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\csi.exe
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\csi.exe.config
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\csi.rsp
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.AppContext.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.Console.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.IO.Compression.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.Security.Claims.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.ValueTuple.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\vbc.exe
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\vbc.exe.config
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\vbc.rsp
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\Antlr3.Runtime.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\EntityFramework.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\EntityFramework.SqlServer.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\Microsoft.AI.Web.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\Newtonsoft.Json.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\PetroTech.Common.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\PetroTech.Data.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\PetroTech.Model.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\PetroTech.Service.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Net.Http.Formatting.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Web.Helpers.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Web.Http.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Web.Http.WebHost.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Web.Mvc.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Web.Optimization.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Web.Razor.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Web.WebPages.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\WebGrease.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\PetroTech.Common.pdb
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\PetroTech.Data.pdb
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\PetroTech.Data.dll.config
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\PetroTech.Model.pdb
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\PetroTech.Model.dll.config
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\PetroTech.Service.pdb
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\EntityFramework.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\EntityFramework.SqlServer.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Web.Helpers.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Web.Mvc.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Web.Optimization.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Web.Razor.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Web.WebPages.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\Newtonsoft.Json.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\Antlr3.Runtime.pdb
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Net.Http.Formatting.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Web.Http.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Web.Http.WebHost.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\Microsoft.AI.Web.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.csprojAssemblyReference.cache
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.csproj.CoreCompileInputs.cache
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.csproj.CopyComplete
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.pdb
+D:\Project\PetroTech\PetroTech.Main\bin\ApplicationInsights.config
+D:\Project\PetroTech\PetroTech.Main\bin\PetroTech.Main.dll.config
+D:\Project\PetroTech\PetroTech.Main\bin\PetroTech.Main.dll
+D:\Project\PetroTech\PetroTech.Main\bin\PetroTech.Main.pdb
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\csc.exe
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\csc.exe.config
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\csc.rsp
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\csi.exe
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\csi.exe.config
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\csi.rsp
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.AppContext.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.Collections.Immutable.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.Console.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.IO.Compression.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.IO.FileSystem.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.IO.Pipes.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.Security.AccessControl.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.Security.Claims.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.ValueTuple.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.Xml.XPath.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\vbc.exe
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\vbc.exe.config
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\vbc.rsp
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\VBCSCompiler.exe
+D:\Project\PetroTech\PetroTech.Main\bin\roslyn\VBCSCompiler.exe.config
+D:\Project\PetroTech\PetroTech.Main\bin\Antlr3.Runtime.dll
+D:\Project\PetroTech\PetroTech.Main\bin\EntityFramework.dll
+D:\Project\PetroTech\PetroTech.Main\bin\EntityFramework.SqlServer.dll
+D:\Project\PetroTech\PetroTech.Main\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Project\PetroTech\PetroTech.Main\bin\Microsoft.AI.DependencyCollector.dll
+D:\Project\PetroTech\PetroTech.Main\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Project\PetroTech\PetroTech.Main\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Project\PetroTech\PetroTech.Main\bin\Microsoft.AI.Web.dll
+D:\Project\PetroTech\PetroTech.Main\bin\Microsoft.AI.WindowsServer.dll
+D:\Project\PetroTech\PetroTech.Main\bin\Microsoft.ApplicationInsights.dll
+D:\Project\PetroTech\PetroTech.Main\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Project\PetroTech\PetroTech.Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project\PetroTech\PetroTech.Main\bin\Microsoft.Web.Infrastructure.dll
+D:\Project\PetroTech\PetroTech.Main\bin\Newtonsoft.Json.dll
+D:\Project\PetroTech\PetroTech.Main\bin\PetroTech.Common.dll
+D:\Project\PetroTech\PetroTech.Main\bin\PetroTech.Data.dll
+D:\Project\PetroTech\PetroTech.Main\bin\PetroTech.Model.dll
+D:\Project\PetroTech\PetroTech.Main\bin\PetroTech.Service.dll
+D:\Project\PetroTech\PetroTech.Main\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Project\PetroTech\PetroTech.Main\bin\System.Net.Http.Formatting.dll
+D:\Project\PetroTech\PetroTech.Main\bin\System.Web.Helpers.dll
+D:\Project\PetroTech\PetroTech.Main\bin\System.Web.Http.dll
+D:\Project\PetroTech\PetroTech.Main\bin\System.Web.Http.WebHost.dll
+D:\Project\PetroTech\PetroTech.Main\bin\System.Web.Mvc.dll
+D:\Project\PetroTech\PetroTech.Main\bin\System.Web.Optimization.dll
+D:\Project\PetroTech\PetroTech.Main\bin\System.Web.Razor.dll
+D:\Project\PetroTech\PetroTech.Main\bin\System.Web.WebPages.Deployment.dll
+D:\Project\PetroTech\PetroTech.Main\bin\System.Web.WebPages.dll
+D:\Project\PetroTech\PetroTech.Main\bin\System.Web.WebPages.Razor.dll
+D:\Project\PetroTech\PetroTech.Main\bin\WebGrease.dll
+D:\Project\PetroTech\PetroTech.Main\bin\PetroTech.Common.pdb
+D:\Project\PetroTech\PetroTech.Main\bin\PetroTech.Data.pdb
+D:\Project\PetroTech\PetroTech.Main\bin\PetroTech.Data.dll.config
+D:\Project\PetroTech\PetroTech.Main\bin\PetroTech.Model.pdb
+D:\Project\PetroTech\PetroTech.Main\bin\PetroTech.Model.dll.config
+D:\Project\PetroTech\PetroTech.Main\bin\PetroTech.Service.pdb
+D:\Project\PetroTech\PetroTech.Main\bin\EntityFramework.xml
+D:\Project\PetroTech\PetroTech.Main\bin\EntityFramework.SqlServer.xml
+D:\Project\PetroTech\PetroTech.Main\bin\System.Web.Helpers.xml
+D:\Project\PetroTech\PetroTech.Main\bin\System.Web.Mvc.xml
+D:\Project\PetroTech\PetroTech.Main\bin\System.Web.Optimization.xml
+D:\Project\PetroTech\PetroTech.Main\bin\System.Web.Razor.xml
+D:\Project\PetroTech\PetroTech.Main\bin\System.Web.WebPages.xml
+D:\Project\PetroTech\PetroTech.Main\bin\System.Web.WebPages.Deployment.xml
+D:\Project\PetroTech\PetroTech.Main\bin\System.Web.WebPages.Razor.xml
+D:\Project\PetroTech\PetroTech.Main\bin\Newtonsoft.Json.xml
+D:\Project\PetroTech\PetroTech.Main\bin\Antlr3.Runtime.pdb
+D:\Project\PetroTech\PetroTech.Main\bin\System.Net.Http.Formatting.xml
+D:\Project\PetroTech\PetroTech.Main\bin\System.Web.Http.xml
+D:\Project\PetroTech\PetroTech.Main\bin\System.Web.Http.WebHost.xml
+D:\Project\PetroTech\PetroTech.Main\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Project\PetroTech\PetroTech.Main\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Project\PetroTech\PetroTech.Main\bin\Microsoft.AI.DependencyCollector.xml
+D:\Project\PetroTech\PetroTech.Main\bin\Microsoft.AI.WindowsServer.xml
+D:\Project\PetroTech\PetroTech.Main\bin\Microsoft.AI.Web.xml
+D:\Project\PetroTech\PetroTech.Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.csprojAssemblyReference.cache
+D:\Project\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.csproj.CoreCompileInputs.cache
+D:\Project\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.csproj.CopyComplete
+D:\Project\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.dll
+D:\Project\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.pdb
+D:\Project\PetroTech\PetroTech.Main\bin\log4net.dll
+D:\Project\PetroTech\PetroTech.Main\bin\log4net.xml
+D:\Project\PetroTech\PetroTech.Main\bin\System.Diagnostics.Process.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\ApplicationInsights.config
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\PetroTech.Main.dll.config
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\PetroTech.Main.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\PetroTech.Main.pdb
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\csc.exe
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\csc.exe.config
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\csc.rsp
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\csi.exe
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\csi.exe.config
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\csi.rsp
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.AppContext.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Collections.Immutable.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Console.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.IO.Compression.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.IO.FileSystem.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.IO.Pipes.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Reflection.Metadata.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Security.AccessControl.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Security.Claims.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.ValueTuple.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Xml.XPath.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\vbc.exe
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\vbc.exe.config
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\vbc.rsp
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\VBCSCompiler.exe
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\roslyn\VBCSCompiler.exe.config
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Antlr3.Runtime.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Autofac.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Autofac.Integration.Mvc.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Autofac.Integration.WebApi.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\AutoMapper.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\EntityFramework.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\EntityFramework.SqlServer.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\log4net.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.AI.DependencyCollector.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.AI.Web.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.AI.WindowsServer.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.ApplicationInsights.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.Security.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.Web.Infrastructure.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Newtonsoft.Json.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Owin.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\PetroTech.Common.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\PetroTech.Data.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\PetroTech.Model.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\PetroTech.Service.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Diagnostics.Process.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Net.Http.Formatting.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.ValueTuple.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Web.Helpers.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Web.Http.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Web.Http.WebHost.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Web.Mvc.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Web.Optimization.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Web.Razor.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Web.WebPages.Deployment.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Web.WebPages.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Web.WebPages.Razor.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\WebGrease.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\PetroTech.Common.pdb
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\PetroTech.Data.pdb
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\PetroTech.Data.dll.config
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\PetroTech.Model.pdb
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\PetroTech.Model.dll.config
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\PetroTech.Service.pdb
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Autofac.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Autofac.Integration.Mvc.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Autofac.Integration.WebApi.pdb
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Autofac.Integration.WebApi.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\AutoMapper.pdb
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\AutoMapper.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\EntityFramework.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\EntityFramework.SqlServer.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\log4net.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.Security.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.ValueTuple.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Web.Helpers.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Web.Mvc.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Web.Optimization.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Web.Razor.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Web.WebPages.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Web.WebPages.Deployment.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Web.WebPages.Razor.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Newtonsoft.Json.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Antlr3.Runtime.pdb
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Net.Http.Formatting.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Web.Http.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Web.Http.WebHost.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.AI.DependencyCollector.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.AI.WindowsServer.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.AI.Web.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Petro\PetroTech-dev\PetroTech.Main\obj\Debug\PetroTech.Main.csprojAssemblyReference.cache
+D:\Petro\PetroTech-dev\PetroTech.Main\obj\Debug\PetroTech.Main.csproj.CoreCompileInputs.cache
+D:\Petro\PetroTech-dev\PetroTech.Main\obj\Debug\PetroTech.Main.csproj.CopyComplete
+D:\Petro\PetroTech-dev\PetroTech.Main\obj\Debug\PetroTech.Main.dll
+D:\Petro\PetroTech-dev\PetroTech.Main\obj\Debug\PetroTech.Main.pdb
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\ApplicationInsights.config
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\PetroTech.Main.dll.config
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\PetroTech.Main.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\PetroTech.Main.pdb
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\csc.exe
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\csc.exe.config
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\csc.rsp
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\csi.exe
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\csi.exe.config
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\csi.rsp
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.Managed.Core.targets
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.AppContext.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Collections.Immutable.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Console.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.IO.Compression.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.IO.FileSystem.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.IO.Pipes.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Reflection.Metadata.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Security.AccessControl.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Security.Claims.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Security.Principal.Windows.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.ValueTuple.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Xml.XmlDocument.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Xml.XPath.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\vbc.exe
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\vbc.exe.config
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\vbc.rsp
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\VBCSCompiler.exe
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\roslyn\VBCSCompiler.exe.config
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Antlr3.Runtime.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Autofac.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Autofac.Integration.Mvc.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Autofac.Integration.WebApi.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\AutoMapper.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\EntityFramework.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\EntityFramework.SqlServer.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\log4net.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.AI.Agent.Intercept.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.AI.DependencyCollector.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.AI.Web.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.AI.WindowsServer.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.ApplicationInsights.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.AspNet.Identity.Core.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.Security.Cookies.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.Security.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.Security.OAuth.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.Web.Infrastructure.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Newtonsoft.Json.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Owin.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\PetroTech.Common.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\PetroTech.Data.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\PetroTech.Model.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\PetroTech.Service.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Diagnostics.DiagnosticSource.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Diagnostics.Process.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Net.Http.Formatting.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.ValueTuple.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Web.Helpers.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Web.Http.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Web.Http.WebHost.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Web.Mvc.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Web.Optimization.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Web.Razor.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Web.WebPages.Deployment.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Web.WebPages.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Web.WebPages.Razor.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\WebGrease.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\PetroTech.Common.pdb
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\PetroTech.Data.pdb
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\PetroTech.Data.dll.config
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\PetroTech.Model.pdb
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\PetroTech.Model.dll.config
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\PetroTech.Service.pdb
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Autofac.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Autofac.Integration.Mvc.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Autofac.Integration.WebApi.pdb
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Autofac.Integration.WebApi.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\AutoMapper.pdb
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\AutoMapper.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\EntityFramework.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\EntityFramework.SqlServer.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\log4net.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.AspNet.Identity.Core.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.Security.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.Security.Cookies.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.Owin.Security.OAuth.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.ValueTuple.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Web.Helpers.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Web.Mvc.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Web.Optimization.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Web.Razor.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Web.WebPages.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Web.WebPages.Deployment.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Web.WebPages.Razor.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Newtonsoft.Json.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Antlr3.Runtime.pdb
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Net.Http.Formatting.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Web.Http.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Web.Http.WebHost.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\System.Diagnostics.DiagnosticSource.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.AI.DependencyCollector.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.AI.WindowsServer.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.AI.Web.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\obj\Debug\PetroTech.Main.csprojAssemblyReference.cache
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\obj\Debug\PetroTech.Main.csproj.CoreCompileInputs.cache
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\obj\Debug\PetroTech.Main.csproj.CopyComplete
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\obj\Debug\PetroTech.Main.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Main\obj\Debug\PetroTech.Main.pdb

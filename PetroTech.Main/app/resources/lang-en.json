@@ -1,0 +1,5 @@
+﻿{
+  //Status
+  'STR_STATUS_USER_A': "Active",
+  'STR_STATUS_USER_I': "Inactive"
+}

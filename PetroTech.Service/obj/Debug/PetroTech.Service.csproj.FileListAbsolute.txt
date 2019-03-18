@@ -1,0 +1,99 @@
+D:\Internal Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Service.dll
+D:\Internal Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Service.pdb
+D:\Internal Project\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.csprojAssemblyReference.cache
+D:\Internal Project\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.csproj.CoreCompileInputs.cache
+D:\Internal Project\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.dll
+D:\Internal Project\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.pdb
+D:\Internal Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Common.dll
+D:\Internal Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Data.dll
+D:\Internal Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Model.dll
+D:\Internal Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Common.pdb
+D:\Internal Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Data.pdb
+D:\Internal Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Data.dll.config
+D:\Internal Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Model.pdb
+D:\Internal Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Model.dll.config
+D:\Internal Project\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.csproj.CopyComplete
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Service.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Service.pdb
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Common.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Data.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Model.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Common.pdb
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Data.pdb
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Data.dll.config
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Model.pdb
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Model.dll.config
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.csprojAssemblyReference.cache
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.csproj.CoreCompileInputs.cache
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.csproj.CopyComplete
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.pdb
+D:\Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Service.dll
+D:\Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Service.pdb
+D:\Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Common.dll
+D:\Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Data.dll
+D:\Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Model.dll
+D:\Project\PetroTech\PetroTech.Service\bin\Debug\EntityFramework.dll
+D:\Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Common.pdb
+D:\Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Data.pdb
+D:\Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Data.dll.config
+D:\Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Model.pdb
+D:\Project\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Model.dll.config
+D:\Project\PetroTech\PetroTech.Service\bin\Debug\EntityFramework.xml
+D:\Project\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.csprojAssemblyReference.cache
+D:\Project\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.csproj.CoreCompileInputs.cache
+D:\Project\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.csproj.CopyComplete
+D:\Project\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.dll
+D:\Project\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.pdb
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Service.dll
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Service.pdb
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\AutoMapper.dll
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Common.dll
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Data.dll
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Model.dll
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\System.ValueTuple.dll
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\EntityFramework.dll
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Common.pdb
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Data.pdb
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Data.dll.config
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Model.pdb
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Model.dll.config
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\AutoMapper.pdb
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\AutoMapper.xml
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\System.ValueTuple.xml
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\EntityFramework.xml
+D:\Petro\PetroTech-dev\PetroTech.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Petro\PetroTech-dev\PetroTech.Service\obj\Debug\PetroTech.Service.csprojAssemblyReference.cache
+D:\Petro\PetroTech-dev\PetroTech.Service\obj\Debug\PetroTech.Service.csproj.CoreCompileInputs.cache
+D:\Petro\PetroTech-dev\PetroTech.Service\obj\Debug\PetroTech.Service.csproj.CopyComplete
+D:\Petro\PetroTech-dev\PetroTech.Service\obj\Debug\PetroTech.Service.dll
+D:\Petro\PetroTech-dev\PetroTech.Service\obj\Debug\PetroTech.Service.pdb
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Service.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Service.pdb
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\AutoMapper.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Common.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Data.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Model.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\System.ValueTuple.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\EntityFramework.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Common.pdb
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Data.pdb
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Data.dll.config
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Model.pdb
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\PetroTech.Model.dll.config
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\AutoMapper.pdb
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\AutoMapper.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\System.ValueTuple.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\EntityFramework.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\obj\Debug\PetroTech.Service.csprojAssemblyReference.cache
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\obj\Debug\PetroTech.Service.csproj.CoreCompileInputs.cache
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\obj\Debug\PetroTech.Service.csproj.CopyComplete
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\obj\Debug\PetroTech.Service.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Service\obj\Debug\PetroTech.Service.pdb

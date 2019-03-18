@@ -1,0 +1,5 @@
+﻿{
+  //Status
+  'STR_STATUS_USER_A': "Hoạt động",
+  'STR_STATUS_USER_I': "Ngưng hoạt động"
+}

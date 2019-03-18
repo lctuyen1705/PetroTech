@@ -1,0 +1,27 @@
+D:\Internal Project\PetroTech\PetroTech.Common\bin\Debug\PetroTech.Common.dll
+D:\Internal Project\PetroTech\PetroTech.Common\bin\Debug\PetroTech.Common.pdb
+D:\Internal Project\PetroTech\PetroTech.Common\obj\Debug\PetroTech.Common.csprojAssemblyReference.cache
+D:\Internal Project\PetroTech\PetroTech.Common\obj\Debug\PetroTech.Common.csproj.CoreCompileInputs.cache
+D:\Internal Project\PetroTech\PetroTech.Common\obj\Debug\PetroTech.Common.dll
+D:\Internal Project\PetroTech\PetroTech.Common\obj\Debug\PetroTech.Common.pdb
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Common\bin\Debug\PetroTech.Common.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Common\bin\Debug\PetroTech.Common.pdb
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Common\obj\Debug\PetroTech.Common.csprojAssemblyReference.cache
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Common\obj\Debug\PetroTech.Common.csproj.CoreCompileInputs.cache
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Common\obj\Debug\PetroTech.Common.dll
+C:\Users\Tuyen.LC\Source\Repos\lctuyen1705\PetroTech\PetroTech.Common\obj\Debug\PetroTech.Common.pdb
+D:\Project\PetroTech\PetroTech.Common\bin\Debug\PetroTech.Common.dll
+D:\Project\PetroTech\PetroTech.Common\bin\Debug\PetroTech.Common.pdb
+D:\Project\PetroTech\PetroTech.Common\obj\Debug\PetroTech.Common.csproj.CoreCompileInputs.cache
+D:\Project\PetroTech\PetroTech.Common\obj\Debug\PetroTech.Common.dll
+D:\Project\PetroTech\PetroTech.Common\obj\Debug\PetroTech.Common.pdb
+D:\Petro\PetroTech-dev\PetroTech.Common\bin\Debug\PetroTech.Common.dll
+D:\Petro\PetroTech-dev\PetroTech.Common\bin\Debug\PetroTech.Common.pdb
+D:\Petro\PetroTech-dev\PetroTech.Common\obj\Debug\PetroTech.Common.csproj.CoreCompileInputs.cache
+D:\Petro\PetroTech-dev\PetroTech.Common\obj\Debug\PetroTech.Common.dll
+D:\Petro\PetroTech-dev\PetroTech.Common\obj\Debug\PetroTech.Common.pdb
+D:\PETROTECH\PetroTech-dev\PetroTech.Common\bin\Debug\PetroTech.Common.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Common\bin\Debug\PetroTech.Common.pdb
+D:\PETROTECH\PetroTech-dev\PetroTech.Common\obj\Debug\PetroTech.Common.csproj.CoreCompileInputs.cache
+D:\PETROTECH\PetroTech-dev\PetroTech.Common\obj\Debug\PetroTech.Common.dll
+D:\PETROTECH\PetroTech-dev\PetroTech.Common\obj\Debug\PetroTech.Common.pdb

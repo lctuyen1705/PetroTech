@@ -1,0 +1,171 @@
+﻿<div>
+    <div class="row">
+        <ol class="breadcrumb">
+            <li>
+                <a href="#">
+                    <em class="fa fa-home"></em>
+                </a>
+            </li>
+            <li><a ui-sref="user">{{'STR_MANAGE_USER' | translate}}</a></li>
+            <li class="active">{{'STR_MANAGE_USER_ADD' | translate}}</li>
+        </ol>
+    </div><!--/.row-->
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">{{'STR_MANAGE_USER_ADD' | translate}}</h1>
+        </div>
+    </div><!--/.row-->
+
+    <div class="row" ng-controller="userAddController">
+        <div class="col-lg-12">
+            <form role="form" ng-submit="AddNewUser()">
+                <div class="panel panel-default">
+                    <div class="panel-body btn-margins">
+                        <div class="col-md-12">
+                            <div class="bootstrap-table">
+                                <div class="pull-left search">
+                                    <a ui-sref="user" class="btn btn-md btn-default"><em class="fa fa-arrow-left"></em>&nbsp;&nbsp;{{'STR_BUTTOM_BACK' | translate}}</a>
+                                    <button class="btn btn-md btn-info" type="submit"><em class="fa fa-save"></em>&nbsp;&nbsp;{{'STR_BUTTOM_SAVE' | translate}}</button>
+                                    <button class="btn btn-md btn-danger" type="button"><em class="fa fa-broom"></em>&nbsp;&nbsp;{{'STR_BUTTOM_CLEAR' | translate}}</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.panel-->
+
+                <div name="modalError" hidden class="panel panel-default">
+                    <div class="panel-body btn-margins">
+                        <div class="col-md-12">
+                            <div class="bootstrap-table">
+                                <div class="pull-left search">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.panel-->
+
+                <div class="panel panel-default">
+                    <div class="panel-body btn-marginy">
+                        <div class="col-md-12">
+                            <div class="bootstrap-table">
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>{{'STR_MANAGE_USER_TABLE_TITLE_USERNAME' | translate}}</label>
+                                        <input ng-model="user.UserName" class="form-control" ng-change="validateUserName()" required>
+                                        <div class="panel-loader">
+                                            <!--<span class="loader" ng-style={display:loaderStyle}></span>-->
+                                            <div ng-style={display:loaderCan}>
+                                                <span class="founder"><em id="loaderImg" class="fa fa-user-check"></em></span>&nbsp; Có thể sử dụng
+                                            </div>
+                                            <div ng-style={display:loaderCannot}>
+                                                <span class="founder"><em id="loaderImg" class="fa fa-user-times"></em></span>&nbsp; Không thể sử dụng
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>{{'STR_MANAGE_USER_TABLE_TITLE_FULLNAME' | translate}}</label>
+                                        <input ng-model="user.FullName" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>{{'STR_MANAGE_USER_TABLE_TITLE_EMAIL' | translate}}</label>
+                                        <input ng-model="user.Email" class="form-control" placeholder="account@psd.com.vn" required ng-pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>{{'STR_MANAGE_USER_TABLE_TITLE_DOB' | translate}}</label>
+                                        <input ng-model="user.DOB" class="form-control" type="date" size="30" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>{{'STR_MANAGE_USER_TABLE_TITLE_ADDRESS' | translate}}</label>
+                                        <input ng-model="user.Address" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>{{'STR_MANAGE_USER_TABLE_TITLE_CITY' | translate}}</label>
+                                        <input ng-model="user.City" required type="text" name="firstName" typeahead-on-select="selectTypeAhead($item)" uib-typeahead="client.firstName for client in clients | filter:{firstName:$viewValue}" typeahead-loading="loading" typeahead-no-results="noResults" class="form-control" autocomplete="off">
+                                        <i ng-show="loading" class="fa fa-sync-alt"></i>
+                                        <div ng-show="noResults">
+                                            <i class="fa fa-times"></i> {{'STR_MANAGE_USER_TABLE_TITLE_CITY_NOTFOUND' | translate}}
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>{{'STR_MANAGE_USER_TABLE_TITLE_AREA' | translate}}</label>
+                                        <select ng-model="user.Area" ng-options="area.areaId as area.areaName for area in areas" class="form-control"></select>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body btn-marginy">
+                        <div class="col-md-12">
+                            <div class="bootstrap-table">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>{{'STR_MANAGE_USER_TABLE_ROLENAME' | translate}}</label>
+                                        <select ng-model="user.RoleId" ng-options="role.RoleId as role.RoleName for role in roles" class="form-control"></select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>{{'STR_MANAGE_USER_TABLE_TITLE_DEPARTMENT' | translate}}</label>
+                                        <select ng-model="user.Department" ng-options="department.departmentId as department.departmentName for department in departments" class="form-control"></select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>{{'STR_MANAGE_USER_TABLE_TITLE_STATUS' | translate}}</label>
+                                        <select ng-model="user.Status" ng-options="status.statusName for status in statusList" class="form-control"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.col-->
+                <div class="panel panel-default">
+                    <div class="panel-body btn-marginy">
+                        <div class="col-md-12">
+                            <div class="panel panel-default ">
+                                <div class="panel-heading">
+                                    {{'STR_MANAGE_USER_TABLE_TITLE_FUNCTIONLIST' | translate}}
+                                </div>
+                                <ul class="todo-list-module" ng-repeat="fun in funcs">
+                                    <li class="todo-list-item-module">
+                                        <div class="panel-body">
+                                            <div class="col-md-12">
+                                                <div class="panel-heading-{{fun.Components | lowercase}}">
+                                                    <div class="row progress-labels">
+                                                        <span class="pull-right clickable panel-toggle panel-button-tab-left">
+                                                            <em class="fa fa-toggle-up"></em>
+                                                        </span>{{fun.ModuleName}}
+                                                    </div>
+                                                </div>
+                                                <div class="panel-body {{fun.Components | lowercase}}">
+                                                    <ul class="todo-list" ng-repeat="fu in fun.Funcs">
+                                                        <li class="todo-list-item">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox-{{fu.ModuleCode}}"
+                                                                       type="checkbox"
+                                                                       ng-change="sync(bool, fu)"
+                                                                       ng-model="bool"
+                                                                       ng-checked="isChecked(fu.FunctionId)">
+                                                                <label for="checkbox-{{fu.ModuleCode}}">{{fu.FunctionName}}</label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div><!-- /.col-->
+    </div>
+</div>

@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html ng-app="petrotech">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETROTECH</title>
+    <link rel="icon" type="img/ico" href="~/Assets/admin/img/favicon.ico">
+    @Styles.Render("~/Assets/admin/css")
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!--Custom Font-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    @*External sources*@
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+</head>
+<body lang="{{lang}}" ng-controller="homeController">
+    <div>
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><span>Petro&nbsp;</span>Tech</a>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown">
+                                <em class="fa fa-globe"></em>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a ng-show="lang === 'en'" ng-click="changeLanguage('vn')">
+                                        <div>
+                                            <img src="~/Assets/admin/img/flag-vn.png" />
+                                            Việt Nam
+                                        </div>
+                                    </a>
+                                    <a ng-show="lang === 'vn'" ng-click="changeLanguage('en')">
+                                        <div>
+                                            <img src="~/Assets/admin/img/flag-usa.png" />
+                                            English
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown">
+                                <em class="fa fa-cog"></em>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <em class="fa fa-user"></em> {{'SRT_YOURPROFILE' | translate}}
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <em class="fa fa-wrench"></em> {{'STR_CHANGEPASSWORD' | translate}}
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <em class="fa fa-power-off"></em> {{'STR_LOGOUT' | translate}}
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+            <div class="divider"></div>
+            <div class="profile-sidebar">
+                <div class="profile-usertitle">
+                    <div class="profile-usertitle-name">lu.chi.tuyen</div>
+                    <div class="profile-usertitle-status">
+                        <span class="indicator label-success"></span>
+                        {{'STR_STATUS_USER_A' | translate}}
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <ul class="nav menu">
+                <li><a ui-sref="user"><em class="fa fa-users">&nbsp;</em> {{'STR_MANAGE_USER' | translate}} </a></li>
+                <li><a ui-sref="role"><em class="fa fa-tools">&nbsp;</em> {{'STR_MANAGE_ROLE' | translate}} </a></li>
+            </ul>
+        </div><!--/.sidebar-->
+
+        <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+            <div ui-view>
+            </div>
+            <div class="col-sm-12">
+                <p class="back-link">{{'STR_FOOTER_INFO' | translate}} <a href="#">PETROTECH Team</a></p>
+            </div>
+        </div>	<!--/.main-->
+    </div>@*controller*@
+
+    @Scripts.Render("~/Assets/admin/js")
+    @Scripts.Render("~/Assets/admin/libs")
+    @*common*@
+    @Scripts.Render("~/app/shared/modules")
+    @*filter*@
+    @Scripts.Render("~/app/shared/filter")
+    @*service*@
+    @Scripts.Render("~/app/shared/services")
+    @*directive*@
+    @Scripts.Render("~/app/shared/directives")
+    @*modal*@
+    @Scripts.Render("~/app/shared/modal")
+    @*modules*@
+    @Scripts.Render("~/app/components/modules")
+    @*app*@
+    @Scripts.Render("~/app")
+    @*components*@
+    @Scripts.Render("~/app/components/users")
+    @Scripts.Render("~/app/components/roles")
+    @Scripts.Render("~/app/components/home")
+    @*@Scripts.Render("~/app/components/dashboard")*@
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.1.2.js"></script>
+</body>
+</html>
