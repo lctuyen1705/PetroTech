@@ -75,7 +75,6 @@ D:\PetroTech\PetroTech.Model\bin\Debug\EntityFramework.xml
 D:\PetroTech\PetroTech.Model\bin\Debug\EntityFramework.SqlServer.xml
 D:\PetroTech\PetroTech.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 D:\PetroTech\PetroTech.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-D:\PetroTech\PetroTech.Model\obj\Debug\PetroTech.Model.csprojAssemblyReference.cache
 D:\PetroTech\PetroTech.Model\obj\Debug\PetroTech.Model.csproj.CoreCompileInputs.cache
 D:\PetroTech\PetroTech.Model\obj\Debug\PetroTech.Model.csproj.CopyComplete
 D:\PetroTech\PetroTech.Model\obj\Debug\PetroTech.Model.dll
