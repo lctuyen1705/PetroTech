@@ -123,3 +123,5 @@ D:\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.csproj.CoreCompileInp
 D:\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.csproj.CopyComplete
 D:\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.dll
 D:\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.pdb
+D:\PetroTech\PetroTech.Service\bin\Debug\Nager.AmazonProductAdvertising.dll
+D:\PetroTech\PetroTech.Service\bin\Debug\Nager.ArticleNumber.dll

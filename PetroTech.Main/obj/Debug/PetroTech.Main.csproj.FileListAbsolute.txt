@@ -763,3 +763,5 @@ D:\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.csproj.CoreCompileInputs.ca
 D:\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.csproj.CopyComplete
 D:\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.dll
 D:\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.pdb
+D:\PetroTech\PetroTech.Main\bin\Nager.AmazonProductAdvertising.dll
+D:\PetroTech\PetroTech.Main\bin\Nager.ArticleNumber.dll
