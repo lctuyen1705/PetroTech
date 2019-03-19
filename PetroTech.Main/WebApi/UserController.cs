@@ -92,31 +92,6 @@ namespace PetroTech.Main.WebApi
             });
         }
 
-        //[Route("amazon")]
-        //[HttpGet]
-        //public HttpResponseMessage GetProduct(HttpRequestMessage request)
-        //{
-        //    return CreateHttpResponse(request, () =>
-        //    {
-        //        var authentication = new AmazonAuthentication
-        //        {
-        //            AccessKey = "AKIAIAQVCIO6R56F2JJQ",
-        //            SecretKey = "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"
-        //        };
-
-        //        var wrapper = new AmazonWrapper(authentication, AmazonEndpoint.US, "aws0cb-20");
-        //        wrapper.ErrorReceived += (err) => Console.WriteLine($"Error {err.Error.Code}: {err.Error.Message}");
-        //        wrapper.XmlReceived += (xml) => Console.WriteLine($"Received: {xml}");
-
-        //        var result = wrapper.Lookup("B07BQFX4SB");
-        //        Console.WriteLine(result.Items.Item[0].DetailPageURL);
-
-        //        HttpResponseMessage response = request.CreateResponse(HttpStatusCode.OK, result);
-
-        //        return response;
-        //    });
-        //}
-
         [Route("add")]
         [HttpPost]
         [AllowAnonymous]
