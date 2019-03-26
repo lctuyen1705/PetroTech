@@ -118,7 +118,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>{{'STR_MANAGE_USER_TABLE_TITLE_STATUS' | translate}}</label>
-                                        <select ng-model="user.Status" ng-options="status.statusName for status in statusList" class="form-control"></select>
+                                        <select ng-model="user.Status" ng-options="status.statusId as status.statusName for status in statusList" class="form-control"></select>
                                     </div>
                                 </div>
                             </div>

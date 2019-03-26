@@ -79,4 +79,3 @@ D:\PetroTech\PetroTech.Model\obj\Debug\PetroTech.Model.csproj.CoreCompileInputs.
 D:\PetroTech\PetroTech.Model\obj\Debug\PetroTech.Model.csproj.CopyComplete
 D:\PetroTech\PetroTech.Model\obj\Debug\PetroTech.Model.dll
 D:\PetroTech\PetroTech.Model\obj\Debug\PetroTech.Model.pdb
-D:\PetroTech\PetroTech.Model\obj\Debug\PetroTech.Model.csprojAssemblyReference.cache

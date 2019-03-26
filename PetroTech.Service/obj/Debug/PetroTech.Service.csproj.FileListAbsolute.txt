@@ -125,3 +125,4 @@ D:\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.dll
 D:\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.pdb
 D:\PetroTech\PetroTech.Service\bin\Debug\Nager.AmazonProductAdvertising.dll
 D:\PetroTech\PetroTech.Service\bin\Debug\Nager.ArticleNumber.dll
+D:\PetroTech\PetroTech.Service\bin\Debug\System.ComponentModel.Annotations.dll

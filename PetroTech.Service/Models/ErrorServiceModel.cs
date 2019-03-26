@@ -8,10 +8,8 @@ namespace PetroTech.Service.Models
 {
     public class ErrorServiceModel
     {
-        public int No { get; set; }
-
         public string Filed { get; set; }
 
-        public string ErrorName { get; set; }
+        public string ErrorMess { get; set; }
     }
 }

@@ -95,22 +95,26 @@ namespace PetroTech.Main.WebApi
         [Route("add")]
         [HttpPost]
         [AllowAnonymous]
-        public HttpResponseMessage Create(HttpRequestMessage request, UserViewModel user)
+        public HttpResponseMessage Post(HttpRequestMessage request, UserViewModel userViewModel)
         {
             return CreateHttpResponse(request, () =>
             {
                 var modelService = new UserServiceModel();
 
-                var model = new ApplicationUser();
-
                 var nofi = string.Empty;
 
-                modelService.UpdateUser(user);
+                modelService.MapDataUser(userViewModel);
 
-                model.MappingServiceToDataModelOfUser(modelService);
+                var listErrors = _userService.AddNewUser(modelService);
 
-                if (!_userService.AddNewUser(model, modelService))
+                if (listErrors.Count == 0)
+                {
                     nofi = (Helper.Enum.Notification.STR_ADD_USER_SUCCESS).GetDescription();
+                }
+                else
+                {
+                    nofi = (Helper.Enum.Notification.STR_ADD_USER_FAILD).GetDescription();
+                }
 
                 HttpResponseMessage response = request.CreateResponse(HttpStatusCode.OK, new { mess = nofi });
 

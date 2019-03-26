@@ -9,6 +9,8 @@ using System.Collections;
 using System.Collections.Generic;
 using PetroTech.Service.Models;
 using AutoMapper;
+using System.Text.RegularExpressions;
+using System.ComponentModel.DataAnnotations;
 
 
 namespace PetroTech.Service.Manager
@@ -16,7 +18,7 @@ namespace PetroTech.Service.Manager
     public interface IUserService
     {
         PaginationSet<UserServiceModel> GetAllUserPaging(string keyword, int page, int pageSize);
-        bool AddNewUser(ApplicationUser model, UserServiceModel modelService);
+        List<ErrorServiceModel> AddNewUser(UserServiceModel modelService);
         bool ValidationUser(string userName);
         void Save();
     }
@@ -109,10 +111,78 @@ namespace PetroTech.Service.Manager
             return paginationSet;
         }
 
-        public bool AddNewUser(ApplicationUser model, UserServiceModel modelService)
+        public List<ErrorServiceModel> AddNewUser(UserServiceModel model)
         {
-            //Add to User Table
-            _userRepository.Add(model);
+            var listErrors = new List<ErrorServiceModel>();
+            var error = new ErrorServiceModel();
+            var regexItem = new Regex("^[a-zA-Z0-9 ]*$");
+            var foo = new EmailAddressAttribute();
+            var bar = false;
+            bar = foo.IsValid(model.Email + (Helper.Constant.ConstantEmailDomain.CONST_GMAIL_DOMAIN).GetDescription());
+
+            #region Fileds
+            var flagUserName = true;
+            var filedUserName = (Helper.Constant.ConstantFiled.CONST_USERNAME).GetDescription();
+            var flagFullName = true;
+            var filedFullName = (Helper.Constant.ConstantFiled.CONST_FULLNAME).GetDescription();
+            var flagEmail = true;
+            var filedEmail = (Helper.Constant.ConstantFiled.CONST_EMAIL).GetDescription();
+            #endregion
+
+            #region Validation UserName
+            if (string.IsNullOrEmpty(model.UserName) && model.UserName.Length < 6)
+            {
+                error.Filed = filedUserName;
+                error.ErrorMess = (Helper.Enum.ValidationError.STR_USERNAME_LENGTH).GetDescription();
+                listErrors.Add(error);
+                flagUserName = false;
+            }
+
+            if (flagUserName)
+            {
+                if (ValidationUser(model.UserName))
+                {
+                    error.Filed = filedUserName;
+                    error.ErrorMess = (Helper.Enum.ValidationError.STR_USERNAME_CANNOTUSE).GetDescription();
+                    listErrors.Add(error);
+                    flagUserName = false;
+                }
+
+                if (regexItem.IsMatch(model.UserName))
+                {
+                    error.Filed = filedUserName;
+                    error.ErrorMess = (Helper.Enum.ValidationError.STR_USERNAME_SPECIALCHAR).GetDescription();
+                    listErrors.Add(error);
+                    flagUserName = false;
+                }
+            }
+            #endregion
+
+            #region Validation FullName
+            if (regexItem.IsMatch(model.FullName))
+            {
+                error.Filed = filedFullName;
+                error.ErrorMess = (Helper.Enum.ValidationError.STR_FULLNAME_SPECIALCHAR).GetDescription();
+                listErrors.Add(error);
+                flagFullName = false;
+            }
+            #endregion
+
+            #region Validation Email
+            if (!new EmailAddressAttribute().IsValid(model.Email + (Helper.Constant.ConstantEmailDomain.CONST_GMAIL_DOMAIN).GetDescription()))
+            {
+                error.Filed = filedEmail;
+                error.ErrorMess = (Helper.Enum.ValidationError.STR_EMAIL_FORMAT).GetDescription();
+                listErrors.Add(error);
+                flagEmail = false;
+            }
+            #endregion
+
+            if (flagUserName && flagFullName && flagEmail)
+            {
+                var data = Mapper.Map<UserServiceModel, ApplicationUser>(model);
+                _userRepository.Add(data);
+            }
 
 
             //Add to Role Table
@@ -121,7 +191,7 @@ namespace PetroTech.Service.Manager
 
             //Add to Permission Table
 
-            return true;
+            return listErrors;
         }
 
         public bool ValidationUser(string userName)

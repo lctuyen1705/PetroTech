@@ -210,12 +210,6 @@
                 }
             }
         };
-
-        apiservice.get('api/user/amazon', null, function (result) {
-            
-        }, function () {
-
-        });
     };
 
 })(angular.module('petrotech.user'));

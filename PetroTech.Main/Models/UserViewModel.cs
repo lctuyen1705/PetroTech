@@ -41,6 +41,6 @@ namespace PetroTech.Main.Models
 
         public DateTime LockoutEndDateUtc { get; set; }
 
-        public IEnumerable<FunctionViewModel> Funcs { get; set; }
+        public List<FunctionViewModel> Functions { get; set; }
     }
 }

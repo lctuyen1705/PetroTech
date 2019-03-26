@@ -8,7 +8,7 @@ namespace PetroTech.Main.Infa.Extensions
 {
     public static class EntityExtensions
     {
-        public static void UpdateUser(this UserServiceModel user, UserViewModel userViewModel)
+        public static void MapDataUser(this UserServiceModel user, UserViewModel userViewModel)
         {
             user.UserId = userViewModel.UserId;
             user.UserName = userViewModel.UserName;
@@ -26,7 +26,7 @@ namespace PetroTech.Main.Infa.Extensions
             user.PhoneNumberConfirmed = userViewModel.PhoneNumberConfirmed;
             user.DOB = userViewModel.DOB;
 
-            user.Funcs = userViewModel.Funcs.Select(x => new FunctionServiceModel
+            user.Functions = userViewModel.Functions.Select(x => new FunctionServiceModel
             {
                 Controller = x.Controller,
                 FunctionId = x.FunctionId,
