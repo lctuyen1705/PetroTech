@@ -26,6 +26,7 @@ namespace PetroTech.Main
                         "~/Assets/admin/libs/angularjs-datetime-picker/angularjs-datetime-picker.js",
                         "~/Assets/admin/libs/angular-animate/angular-animate.js",
                         "~/Assets/admin/libs/angular-route/angular-route.js",
+                        "~/Assets/admin/libs/ocLazyLoad/dist/ocLazyLoad.js",
                         "~/Assets/admin/libs/angular-ui-router/release/angular-ui-router.js"));
 
             //modules

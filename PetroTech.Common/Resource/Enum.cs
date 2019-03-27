@@ -29,22 +29,22 @@ namespace PetroTech.Common.Resource
 
             public enum ValidationError
             {
-                [Description("UserName must be more than 6 character")]
+                [Description("User Name must be more than 6 character")]
                 STR_USERNAME_LENGTH = 1,
 
-                [Description("This UserName can use")]
+                [Description("This User Name can use")]
                 STR_USERNAME_CANUSE = 2,
 
-                [Description("This UserName can't use")]
+                [Description("This User Name can't use")]
                 STR_USERNAME_CANNOTUSE = 3,
 
-                [Description("UserName can't use special character")]
+                [Description("User Name can't use special character")]
                 STR_USERNAME_SPECIALCHAR = 4,
 
-                [Description("FullName can't use special character")]
+                [Description("Full Name can't use special character")]
                 STR_FULLNAME_SPECIALCHAR = 5,
 
-                [Description("Email must be correct format example@domain.com")]
+                [Description("Email must be correct format account@psd.com.vn")]
                 STR_EMAIL_FORMAT = 6,
 
                 [Description("Email must be more than 6 character")]
@@ -68,7 +68,7 @@ namespace PetroTech.Common.Resource
 
             public enum ConstantEmailDomain
             {
-                [Description("@psd.com.vn")]
+                [Description("psd.com.vn")]
                 CONST_GMAIL_DOMAIN = 1,
             }
 

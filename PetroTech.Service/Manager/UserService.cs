@@ -11,7 +11,7 @@ using PetroTech.Service.Models;
 using AutoMapper;
 using System.Text.RegularExpressions;
 using System.ComponentModel.DataAnnotations;
-
+using PetroTech.Service.Models.result;
 
 namespace PetroTech.Service.Manager
 {
@@ -19,7 +19,7 @@ namespace PetroTech.Service.Manager
     {
         PaginationSet<UserServiceModel> GetAllUserPaging(string keyword, int page, int pageSize);
         List<ErrorServiceModel> AddNewUser(UserServiceModel modelService);
-        bool ValidationUser(string userName);
+        ResultAPI<string> ValidationUser(string userName);
         void Save();
     }
 
@@ -115,10 +115,8 @@ namespace PetroTech.Service.Manager
         {
             var listErrors = new List<ErrorServiceModel>();
             var error = new ErrorServiceModel();
-            var regexItem = new Regex("^[a-zA-Z0-9 ]*$");
-            var foo = new EmailAddressAttribute();
-            var bar = false;
-            bar = foo.IsValid(model.Email + (Helper.Constant.ConstantEmailDomain.CONST_GMAIL_DOMAIN).GetDescription());
+            var regexItem = new Regex(@"[~`!@#$%^&*()-+=|\{}':;.,<>/?]");
+            var regexItemDomainEmail = new Regex(@"psd.com.vn");
 
             #region Fileds
             var flagUserName = true;
@@ -135,16 +133,20 @@ namespace PetroTech.Service.Manager
                 error.Filed = filedUserName;
                 error.ErrorMess = (Helper.Enum.ValidationError.STR_USERNAME_LENGTH).GetDescription();
                 listErrors.Add(error);
+                error = new ErrorServiceModel();
                 flagUserName = false;
             }
 
             if (flagUserName)
             {
-                if (ValidationUser(model.UserName))
+                var resultValidate = ValidationUser(model.UserName);
+
+                if (resultValidate.IsProcess == false)
                 {
                     error.Filed = filedUserName;
-                    error.ErrorMess = (Helper.Enum.ValidationError.STR_USERNAME_CANNOTUSE).GetDescription();
+                    error.ErrorMess = resultValidate.Mess;
                     listErrors.Add(error);
+                    error = new ErrorServiceModel();
                     flagUserName = false;
                 }
 
@@ -153,6 +155,7 @@ namespace PetroTech.Service.Manager
                     error.Filed = filedUserName;
                     error.ErrorMess = (Helper.Enum.ValidationError.STR_USERNAME_SPECIALCHAR).GetDescription();
                     listErrors.Add(error);
+                    error = new ErrorServiceModel();
                     flagUserName = false;
                 }
             }
@@ -164,24 +167,38 @@ namespace PetroTech.Service.Manager
                 error.Filed = filedFullName;
                 error.ErrorMess = (Helper.Enum.ValidationError.STR_FULLNAME_SPECIALCHAR).GetDescription();
                 listErrors.Add(error);
+                error = new ErrorServiceModel();
                 flagFullName = false;
             }
             #endregion
 
             #region Validation Email
-            if (!new EmailAddressAttribute().IsValid(model.Email + (Helper.Constant.ConstantEmailDomain.CONST_GMAIL_DOMAIN).GetDescription()))
+            if (string.IsNullOrEmpty(model.Email))
             {
                 error.Filed = filedEmail;
                 error.ErrorMess = (Helper.Enum.ValidationError.STR_EMAIL_FORMAT).GetDescription();
                 listErrors.Add(error);
+                error = new ErrorServiceModel();
                 flagEmail = false;
+            }
+            if (flagEmail)
+            {
+                var domain = model.Email.Split('@')[1];
+                if (!regexItemDomainEmail.IsMatch(domain))
+                {
+                    error.Filed = filedEmail;
+                    error.ErrorMess = (Helper.Enum.ValidationError.STR_EMAIL_FORMAT).GetDescription();
+                    listErrors.Add(error);
+                    error = new ErrorServiceModel();
+                    flagEmail = false;
+                }
             }
             #endregion
 
             if (flagUserName && flagFullName && flagEmail)
             {
                 var data = Mapper.Map<UserServiceModel, ApplicationUser>(model);
-                _userRepository.Add(data);
+                //_userRepository.Add(data);
             }
 
 
@@ -194,18 +211,48 @@ namespace PetroTech.Service.Manager
             return listErrors;
         }
 
-        public bool ValidationUser(string userName)
+        public ResultAPI<string> ValidationUser(string userName)
         {
+            var result = new ResultAPI<string>();
+
+            userName = userName.Trim();
+
             //Validation for data
+            if (userName == "undefined" || string.IsNullOrEmpty(userName))
+            {
+                result.Mess = string.Empty;
+                result.Data = "none";
+                result.Class = "validate-mess-red";
+                return result;
+            }
+
+            if (userName.Length < 6)
+            {
+                result.IsProcess = false;
+                result.Mess = (Helper.Enum.ValidationError.STR_USERNAME_LENGTH).GetDescription();
+                result.Data = "block";
+                result.Class = "validate-mess-red";
+                return result;
+            }
+
             var query = from u in _userRepository.Table
                         where u.UserCode == userName
                         select u;
 
             if (query.Count() > 0 && query != null)
-                return true;
+            {
+                result.IsProcess = false;
+                result.Mess = (Helper.Enum.ValidationError.STR_USERNAME_CANNOTUSE).GetDescription();
+                result.Data = "block";
+                result.Class = "validate-mess-red";
+                return result;
+            }
 
-            return false;
-
+            result.IsProcess = true;
+            result.Mess = (Helper.Enum.ValidationError.STR_USERNAME_CANUSE).GetDescription();
+            result.Data = "block";
+            result.Class = "validate-mess-green";
+            return result;
         }
 
         public void Save()

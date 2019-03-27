@@ -100,9 +100,12 @@ D:\PETROTECH\PetroTech-dev\PetroTech.Service\obj\Debug\PetroTech.Service.pdb
 D:\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Service.dll
 D:\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Service.pdb
 D:\PetroTech\PetroTech.Service\bin\Debug\AutoMapper.dll
+D:\PetroTech\PetroTech.Service\bin\Debug\Nager.AmazonProductAdvertising.dll
+D:\PetroTech\PetroTech.Service\bin\Debug\Nager.ArticleNumber.dll
 D:\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Common.dll
 D:\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Data.dll
 D:\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Model.dll
+D:\PetroTech\PetroTech.Service\bin\Debug\System.ComponentModel.Annotations.dll
 D:\PetroTech\PetroTech.Service\bin\Debug\System.ValueTuple.dll
 D:\PetroTech\PetroTech.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 D:\PetroTech\PetroTech.Service\bin\Debug\EntityFramework.dll
@@ -123,6 +126,3 @@ D:\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.csproj.CoreCompileInp
 D:\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.csproj.CopyComplete
 D:\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.dll
 D:\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.pdb
-D:\PetroTech\PetroTech.Service\bin\Debug\Nager.AmazonProductAdvertising.dll
-D:\PetroTech\PetroTech.Service\bin\Debug\Nager.ArticleNumber.dll
-D:\PetroTech\PetroTech.Service\bin\Debug\System.ComponentModel.Annotations.dll

@@ -16,6 +16,7 @@ using PetroTech.Main.Infa.Extensions;
 using PetroTech.Common.Resource;
 using Nager.AmazonProductAdvertising;
 using System;
+using PetroTech.Service.Models.result;
 
 namespace PetroTech.Main.WebApi
 {
@@ -101,22 +102,26 @@ namespace PetroTech.Main.WebApi
             {
                 var modelService = new UserServiceModel();
 
-                var nofi = string.Empty;
+                var result = new ResultAPI<ErrorViewModel>();
 
                 modelService.MapDataUser(userViewModel);
 
                 var listErrors = _userService.AddNewUser(modelService);
 
-                if (listErrors.Count == 0)
+                if (listErrors.Count > 0)
                 {
-                    nofi = (Helper.Enum.Notification.STR_ADD_USER_SUCCESS).GetDescription();
+                    var data = Mapper.Map<List<ErrorServiceModel>, List<ErrorViewModel>>(listErrors);
+                    result.ListData = data;
+                    result.IsProcess = false;
+                    result.Mess = (Helper.Enum.Notification.STR_ADD_USER_FAILD).GetDescription();
                 }
                 else
                 {
-                    nofi = (Helper.Enum.Notification.STR_ADD_USER_FAILD).GetDescription();
+                    result.IsProcess = true;
+                    result.Mess = (Helper.Enum.Notification.STR_ADD_USER_SUCCESS).GetDescription();
                 }
 
-                HttpResponseMessage response = request.CreateResponse(HttpStatusCode.OK, new { mess = nofi });
+                HttpResponseMessage response = request.CreateResponse(HttpStatusCode.OK, result);
 
                 return response;
             });

@@ -696,6 +696,8 @@ D:\PetroTech\PetroTech.Main\bin\Microsoft.Owin.Security.Cookies.dll
 D:\PetroTech\PetroTech.Main\bin\Microsoft.Owin.Security.dll
 D:\PetroTech\PetroTech.Main\bin\Microsoft.Owin.Security.OAuth.dll
 D:\PetroTech\PetroTech.Main\bin\Microsoft.Web.Infrastructure.dll
+D:\PetroTech\PetroTech.Main\bin\Nager.AmazonProductAdvertising.dll
+D:\PetroTech\PetroTech.Main\bin\Nager.ArticleNumber.dll
 D:\PetroTech\PetroTech.Main\bin\Newtonsoft.Json.dll
 D:\PetroTech\PetroTech.Main\bin\Owin.dll
 D:\PetroTech\PetroTech.Main\bin\PetroTech.Common.dll
@@ -763,5 +765,3 @@ D:\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.csproj.CoreCompileInputs.ca
 D:\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.csproj.CopyComplete
 D:\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.dll
 D:\PetroTech\PetroTech.Main\obj\Debug\PetroTech.Main.pdb
-D:\PetroTech\PetroTech.Main\bin\Nager.AmazonProductAdvertising.dll
-D:\PetroTech\PetroTech.Main\bin\Nager.ArticleNumber.dll

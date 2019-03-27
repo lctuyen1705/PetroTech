@@ -906,6 +906,7 @@ a.label:hover, a.label:focus {
         padding: 7px 15px;
     }
 
+
         .nav-pills li.active a, .nav-pills li.active a:hover {
             background: #30a5ff;
         }
@@ -1341,4 +1342,12 @@ p.back-link {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.validate-mess-green {
+    color:green;
+}
+
+.validate-mess-red {
+    color:red;
 }

@@ -68,6 +68,7 @@
     <Compile Include="Models\FunctionServiceModel.cs" />
     <Compile Include="Models\map\FuncRoleServiceModel.cs" />
     <Compile Include="Models\map\FuncRoleServiceModelList.cs" />
+    <Compile Include="Models\result\ResultAPI.cs" />
     <Compile Include="Models\RoleServiceModel.cs" />
     <Compile Include="Models\UserServiceModel.cs" />
     <Compile Include="Models\ValidationServiceModel.cs" />

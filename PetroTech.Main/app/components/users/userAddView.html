@@ -20,6 +20,26 @@
     <div class="row" ng-controller="userAddController">
         <div class="col-lg-12">
             <form role="form" ng-submit="AddNewUser()">
+
+                <div ng-style={display:modelError} class="panel panel-orange">
+                    <div class="panel-body">
+                        <div class="col-md-12">
+                            <div class="bootstrap-table">
+                                <div class="pull-left search">
+                                    <ul ng-repeat="err in listErrors">
+                                        <li class="right">
+                                            <div class="chat-body">
+                                                <div class="header"><strong class="pull-left primary-font">{{err.Filed}}&nbsp;</strong></div>
+                                                <p>{{err.ErrorMess}}</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.panel-->
+
                 <div class="panel panel-default">
                     <div class="panel-body btn-margins">
                         <div class="col-md-12">
@@ -28,18 +48,6 @@
                                     <a ui-sref="user" class="btn btn-md btn-default"><em class="fa fa-arrow-left"></em>&nbsp;&nbsp;{{'STR_BUTTOM_BACK' | translate}}</a>
                                     <button class="btn btn-md btn-info" type="submit"><em class="fa fa-save"></em>&nbsp;&nbsp;{{'STR_BUTTOM_SAVE' | translate}}</button>
                                     <button class="btn btn-md btn-danger" type="button"><em class="fa fa-broom"></em>&nbsp;&nbsp;{{'STR_BUTTOM_CLEAR' | translate}}</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.panel-->
-
-                <div name="modalError" hidden class="panel panel-default">
-                    <div class="panel-body btn-margins">
-                        <div class="col-md-12">
-                            <div class="bootstrap-table">
-                                <div class="pull-left search">
-
                                 </div>
                             </div>
                         </div>
@@ -57,11 +65,8 @@
                                         <input ng-model="user.UserName" class="form-control" ng-change="validateUserName()" required>
                                         <div class="panel-loader">
                                             <!--<span class="loader" ng-style={display:loaderStyle}></span>-->
-                                            <div ng-style={display:loaderCan}>
-                                                <span class="founder"><em id="loaderImg" class="fa fa-user-check"></em></span>&nbsp; Có thể sử dụng
-                                            </div>
-                                            <div ng-style={display:loaderCannot}>
-                                                <span class="founder"><em id="loaderImg" class="fa fa-user-times"></em></span>&nbsp; Không thể sử dụng
+                                            <div ng-style={display:loader}>
+                                                <span class="founder {{rsClass}}"><em id="loaderImg" class="fa fa-info-circle"></em>&nbsp;{{rsMess}}</span>
                                             </div>
                                         </div>
                                     </div>
