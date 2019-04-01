@@ -20,6 +20,7 @@
     function _userController($scope, apiservice, notificationService) {
 
         $scope.users = [];
+        $scope.page = 0;
         $scope.pagesCount = 0;
         $scope.pageSize = 5;
         $scope.keyword = '';
@@ -70,12 +71,19 @@
             { 'departmentId': 'HC', 'departmentName': 'Phòng Hành Chính' },
         ];
 
-        $scope.SearchUser = function () {
-            $scope.page = $scope.page || 0;
+        $scope.getListUsers = getListUsers;
+        $scope.SearchUser = SearchUser;
+
+        function SearchUser() {
+            getListUsers();
+        }
+
+        function getListUsers(page) {
+            page = page || 0;
             var config = {
                 params: {
                     keyword: $scope.keyword,
-                    page: $scope.page,
+                    page: page,
                     pageSize: $scope.item,
                     usernameVal: $scope.usernameVal,
                     areaVal: $scope.areaVal,
@@ -97,6 +105,7 @@
             });
         }
 
+        $scope.getListUsers();
     }
 
 })(angular.module('petrotech.user'));

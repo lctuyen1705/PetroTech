@@ -8,9 +8,9 @@
         ]
     ).config(config);
 
-    config.$inject = ['$stateProvider', '$urlRouterProvider', '$translateProvider', '$ocLazyLoadProvider'];
+    config.$inject = ['$stateProvider', '$urlRouterProvider', '$translateProvider'];
 
-    function config($stateProvider, $urlRouterProvider, $translateProvider, $ocLazyLoadProvider) {
+    function config($stateProvider, $urlRouterProvider, $translateProvider) {
 
         $stateProvider.state('home', {
             url: "/admin",
@@ -60,9 +60,13 @@
 
             STR_MANAGE_ROLE: 'Manage Role',
             STR_MANAGE_LIST_ROLE: 'List Roles',
-            STR_MANAGE_ROLE_TABLE_SEARCH: 'Search role name',
-            STR_MANAGE_ROLE_TABLE_TITLE_PHONENUMBER: 'Phone Number',
-            STR_MANAGE_ROLE_TABLE_TITLE_STATUS: 'Status',
+            STR_MANAGE_ROLE_TABLE_SEARCH: 'Search',
+            STR_MANAGE_ROLE_TABLE_TITLE_ROLEID: 'Role id',
+            STR_MANAGE_ROLE_TABLE_TITLE_ROLENAME: 'Role name',
+            STR_MANAGE_ROLE_TABLE_TITLE_ROLECODE: 'Role code',
+            STR_MANAGE_ROLE_TABLE_TITLE_LASTUPDATEDATETIME: 'Last updated time',
+            STR_MANAGE_ROLE_TABLE_TITLE_LASTUPDATEBY: 'Last updated by',
+            STR_MANAGE_ROLE_ADD: 'Add New Role',
 
             STR_MANAGE_DASHBOARD: 'Dashboard',
 
@@ -110,7 +114,15 @@
             STR_MANAGE_USER_TABLE_TITLE_FUNCTIONLIST: 'Danh sách chức năng',
             STR_MANAGE_USER_EDIT: 'Chỉnh sửa thông tin người dùng',
 
-            STR_MANAGE_ROLE: 'Quản lý quyền',
+            STR_MANAGE_ROLE: 'Quản lý cấp bậc',
+            STR_MANAGE_LIST_ROLE: 'Danh sách cấp bậc',
+            STR_MANAGE_ROLE_TABLE_SEARCH: 'Tim kiếm',
+            STR_MANAGE_ROLE_TABLE_TITLE_ROLEID: 'Mã cấp bậc',
+            STR_MANAGE_ROLE_TABLE_TITLE_ROLENAME: 'Tên cấp bậc',
+            STR_MANAGE_ROLE_TABLE_TITLE_ROLECODE: 'Mã code cấp bậc',
+            STR_MANAGE_ROLE_TABLE_TITLE_LASTUPDATEDATETIME: 'Thời gian cập nhật lần cuối',
+            STR_MANAGE_ROLE_TABLE_TITLE_LASTUPDATEBY: 'Cập nhật lần cuối bởi',
+            STR_MANAGE_ROLE_ADD: 'Thêm mới cấp bậc',
 
             STR_MANAGE_DASHBOARD: 'Thống kê',
 

@@ -28,6 +28,9 @@ namespace PetroTech.Main
                         "~/Assets/admin/libs/angular-route/angular-route.js",
                         "~/Assets/admin/libs/ocLazyLoad/dist/ocLazyLoad.js",
                         "~/Assets/admin/libs/checklist-model/checklist-model.js",
+                        "~/Assets/admin/libs/bootbox/src/bootbox.js",
+                        "~/Assets/admin/libs/ngBootbox/ngBootbox.js",
+                        "~/Assets/admin/libs/angular-guid/guid.js",
                         "~/Assets/admin/libs/angular-ui-router/release/angular-ui-router.js"));
 
             //modules

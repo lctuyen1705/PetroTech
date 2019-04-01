@@ -50,6 +50,12 @@ namespace PetroTech.Data.Infa
             return dbSet.Remove(entity);
         }
 
+        public virtual T Delete(string id)
+        {
+            var entity = dbSet.Find(id);
+            return dbSet.Remove(entity);
+        }
+
         public virtual T Delete(int id)
         {
             var entity = dbSet.Find(id);

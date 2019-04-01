@@ -6,6 +6,8 @@
         'ngAnimate',
         'ui.bootstrap',
         'oc.lazyLoad',
-        'checklist-model'
+        'checklist-model',
+        'ngBootbox',
+        'ngGuid'
     ])
 })();

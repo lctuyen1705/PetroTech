@@ -44,5 +44,16 @@ namespace PetroTech.Service.Infa.Extensions
             userRole.UserName = userServiceModel.UserName;
             userRole.RoleId = Guid.Parse(userServiceModel.RoleId);
         }
+
+        public static void MappingServiceToDataModelOfRole(this Role role, RoleServiceModel roleServiceModel)
+        {
+            role.RoleCode = roleServiceModel.RoleCode;
+            role.RoleId = Guid.Parse(roleServiceModel.RoleId);
+            role.RoleName = roleServiceModel.RoleName;
+            role.CreatedBy = "System";
+            role.CreateDateTime = DateTime.Now;
+            role.LastUpdatedBy = "System";
+            role.LastUpdatedDateTime = DateTime.Now;
+        }
     }
 }

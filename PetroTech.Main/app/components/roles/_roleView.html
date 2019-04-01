@@ -24,14 +24,86 @@
     </div><!--/.row-->
     <div class="row" ng-controller="_roleController">
         <div class="col-lg-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">{{'STR_MANAGE_ROLE' | translate}}</div>
-                <div class="panel-body btn-margins">
-                    <div class="col-md-12">
-                        <h2>Comming soon!</h2>
+            <form role="form" ng-submit="SearchRole()">
+                <div class="panel panel-default">
+                    <div class="panel-body btn-margins">
+                        <div class="col-md-12">
+                            <div class="bootstrap-table">
+                                <div class="pull-left search">
+                                    <a ui-sref="role-add" class="btn btn-md btn-info"><em class="fa fa-plus"></em>&nbsp;&nbsp;{{'STR_BUTTOM_ADD' | translate}}</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div><!-- /.panel-->
+                </div><!-- /.panel-->
+                <div class="panel panel-default">
+                    <div class="panel-heading">{{'STR_MANAGE_LIST_ROLE' | translate}}</div>
+                    <div class="panel-body btn-margins">
+                        <div class="col-md-12">
+                            <div class="bootstrap-table">
+                                <div class="pull-right search">
+                                    <input ng-model="keyword" my-enter="SearchRole()" class="form-control" type="text" placeholder="{{'STR_MANAGE_ROLE_TABLE_SEARCH' | translate}}">
+                                </div>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                </label>
+                                            </th>
+                                            <th>{{'STR_MANAGE_ROLE_TABLE_TITLE_ROLECODE' | translate}}</th>
+                                            <th>{{'STR_MANAGE_ROLE_TABLE_TITLE_ROLENAME' | translate}}</th>
+                                            <th>{{'STR_MANAGE_ROLE_TABLE_TITLE_LASTUPDATEBY' | translate}}</th>
+                                            <th>{{'STR_MANAGE_ROLE_TABLE_TITLE_LASTUPDATEDATETIME' | translate}}</th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="role in roles">
+                                            <td>
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                </label>
+                                            </td>
+                                            <td>{{role.RoleCode}}</td>
+                                            <td>{{role.RoleName}}</td>
+                                            <td>{{role.LastUpdatedBy}}</td>
+                                            <td>{{role.LastUpdatedDateTime | date:'dd/MM/yyyy HH:mm:ss'}}</td>
+                                            <td>
+                                                <label>
+                                                    <button type="button" class="btn btn-sm btn-info" ui-sref="role-edit({id:role.RoleCode})"><em class="fa fa-edit"></em></button>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <button type="button" class="btn btn-sm btn-danger" ng-click="deleteRole(role.RoleCode)"><em class="fa fa-trash"></em></button>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="fixed-table-pagination">
+                                    <div class="pull-left pagination-detail">
+                                        <span class="pagination-info">
+                                            Showing&nbsp;{{totalCount}}&nbsp;rows
+                                        </span>
+                                        <span class="page-list">
+                                            <div class="btn-group dropup">
+                                                <select ng-model="item" ng-options="item for item in nums" ng-change="SearchRole()"></select>
+                                                <span hidden>{{item}}</span>
+                                            </div>
+                                            &nbsp;records&nbsp;per&nbsp;page
+                                        </span>
+                                    </div>
+                                </div>
+                                <pager-directive page="{{page}}" custom-path="{{customPath}}" pages-count="{{pagesCount}}" total-count="{{totalCount}}" search-func="getListRoles(page)"></pager-directive>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.panel-->
+            </form>
         </div><!-- /.col-->
     </div>
 </div>

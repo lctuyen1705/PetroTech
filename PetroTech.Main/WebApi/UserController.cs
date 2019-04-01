@@ -169,12 +169,12 @@ namespace PetroTech.Main.WebApi
                     var data = Mapper.Map<List<ErrorServiceModel>, List<ErrorViewModel>>(listErrors);
                     result.ListData = data;
                     result.IsProcess = false;
-                    result.Mess = (Helper.Enum.Notification.STR_UPDATE_FAILD).GetDescription();
+                    result.Mess = (Helper.Enum.Notification.STR_UPDATE_USER_FAILD).GetDescription();
                 }
                 else
                 {
                     result.IsProcess = true;
-                    result.Mess = (Helper.Enum.Notification.STR_UPDATE_SUCCESS).GetDescription();
+                    result.Mess = (Helper.Enum.Notification.STR_UPDATE_USER_SUCCESS).GetDescription();
                 }
 
                 HttpResponseMessage response = request.CreateResponse(HttpStatusCode.OK, result);

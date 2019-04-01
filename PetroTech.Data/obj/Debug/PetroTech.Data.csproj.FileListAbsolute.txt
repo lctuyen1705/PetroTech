@@ -115,3 +115,4 @@ D:\PetroTech\PetroTech.Data\obj\Debug\PetroTech.Data.dll
 D:\PetroTech\PetroTech.Data\obj\Debug\PetroTech.Data.pdb
 D:\PetroTech\PetroTech.Data\obj\Debug\PetroTech.Data.Migrations.tuyenlc.resources
 D:\PetroTech\PetroTech.Data\obj\Debug\PetroTech.Data.csproj.GenerateResource.cache
+D:\PetroTech\PetroTech.Data\obj\Debug\PetroTech.Data.Migrations.tuyenlc2.resources

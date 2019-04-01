@@ -7,8 +7,14 @@ namespace PetroTech.Main.Models
 {
     public class RoleViewModel
     {
-        public Guid RoleId { get; set; }
+        public string RoleId { get; set; }
+
+        public string RoleCode { get; set; }
 
         public string RoleName { get; set; }
+
+        public string LastUpdatedBy { get; set; }
+
+        public DateTime LastUpdatedDateTime { get; set; }
     }
 }

@@ -16,6 +16,8 @@ namespace PetroTech.Data.Infa
         // Marks an entity to be removed
         T Delete(T entity);
 
+        T Delete(string id);
+
         T Delete(int id);
 
         //Delete multi records

@@ -1,9 +1,99 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
-</body>
-</html>
+﻿<div>
+    <div class="row">
+        <ol class="breadcrumb">
+            <li>
+                <a href="#">
+                    <em class="fa fa-home"></em>
+                </a>
+            </li>
+            <li><a ui-sref="user">{{'STR_MANAGE_USER' | translate}}</a></li>
+            <li class="active">{{'STR_MANAGE_ROLE_ADD' | translate}}</li>
+        </ol>
+    </div><!--/.row-->
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">{{'STR_MANAGE_ROLE_ADD' | translate}}</h1>
+        </div>
+    </div><!--/.row-->
+
+    <div class="row" ng-controller="roleAddController">
+        <div class="col-lg-12">
+            <form role="form" ng-submit="AddNewRole()">
+
+                <div ng-style={display:modelError} class="panel panel-orange">
+                    <div class="panel-body">
+                        <div class="col-md-12">
+                            <div class="bootstrap-table">
+                                <div class="search">
+                                    <ul ng-repeat="err in listErrors">
+                                        <li class="right">
+                                            <div class="chat-body">
+                                                <div class="header"><strong class="pull-left primary-font">{{err.Filed}}&nbsp;</strong></div>
+                                                <p>{{err.ErrorMess}}</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.panel-->
+
+                <div class="panel panel-default">
+                    <div class="panel-body btn-margins">
+                        <div class="col-md-12">
+                            <div class="bootstrap-table">
+                                <div class="pull-left search">
+                                    <a ui-sref="role" class="btn btn-md btn-default"><em class="fa fa-arrow-left"></em>&nbsp;&nbsp;{{'STR_BUTTOM_BACK' | translate}}</a>
+                                    <button class="btn btn-md btn-info" type="submit"><em class="fa fa-save"></em>&nbsp;&nbsp;{{'STR_BUTTOM_SAVE' | translate}}</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.panel-->
+
+                <div class="panel panel-default">
+                    <div class="panel-body btn-marginy">
+                        <div class="col-md-12">
+                            <div class="bootstrap-table">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>{{'STR_MANAGE_ROLE_TABLE_TITLE_ROLEID' | translate}}</label>&nbsp;&ndash;
+                                        <span>{{newGuid}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body btn-marginy">
+                        <div class="col-md-12">
+                            <div class="bootstrap-table">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>{{'STR_MANAGE_ROLE_TABLE_TITLE_ROLECODE' | translate}}</label>
+                                        <input ng-model="role.RoleCode" class="form-control" ng-change="validateRoleCode()" required>
+                                        <div class="panel-loader">
+                                            <div ng-style={display:loader}>
+                                                <span class="founder {{rsClass}}"><em id="loaderImg" class="fa fa-info-circle"></em>&nbsp;{{rsMess}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>{{'STR_MANAGE_ROLE_TABLE_TITLE_ROLENAME' | translate}}</label>
+                                        <input ng-model="role.RoleName" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div><!-- /.col-->
+    </div>
+</div>

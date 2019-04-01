@@ -56,7 +56,8 @@ namespace PetroTech.Service.Manager
             var mess = string.Empty;
 
             //user master take by pagesize
-            var users = _userRepository.GetAll();
+            var users = from u in _userRepository.Table
+                        select u;
 
             if (!string.IsNullOrEmpty(usernameVal))
             {
@@ -395,17 +396,10 @@ namespace PetroTech.Service.Manager
                             {
                                 foreach (var f in infoUser.Functions)
                                 {
-                                    var m = model.Functions.Where(x => x.FunctionId == f.FunctionId);
-
-                                    if (m.Count() < 0)
+                                    if (model.Functions.Where(x => x.FunctionId == f.FunctionId).Count() <= 0)
                                     {
-                                        foreach (var item in m)
-                                        {
-                                            var del = new Permission();
-                                            del.FunctionId = item.FunctionId;
-                                            del.UserName = model.UserName;
-                                            _permissionRepository.Delete(del);
-                                        }
+                                        _permissionRepository.DeleteMulti(x => x.FunctionId == f.FunctionId &&
+                                                                               x.UserName == model.UserName);
                                     }
                                     else
                                     {
@@ -415,16 +409,13 @@ namespace PetroTech.Service.Manager
                             }
                             else
                             {
-                                foreach (var f in model.Functions)
+                                if (infoUser.Functions.Where(x => x.FunctionId == func.FunctionId).Count() > 0)
                                 {
-                                    if (infoUser.Functions.Where(x => x.FunctionId == f.FunctionId).Count() > 0)
-                                    {
-                                        _permissionRepository.Update(permissiion);
-                                    }
-                                    else
-                                    {
-                                        _permissionRepository.Add(permissiion);
-                                    }
+                                    _permissionRepository.Update(permissiion);
+                                }
+                                else
+                                {
+                                    _permissionRepository.Add(permissiion);
                                 }
                             }
 
@@ -440,11 +431,7 @@ namespace PetroTech.Service.Manager
             {
                 if (isUpdate)
                 {
-                    var query = (from p in _permissionRepository.Table
-                                 where p.UserName == model.UserName
-                                 select p).FirstOrDefault();
-
-                    _permissionRepository.Delete(query);
+                    _permissionRepository.DeleteMulti(x => x.UserName == model.UserName);
                 }
             }
 

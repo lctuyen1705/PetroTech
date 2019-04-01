@@ -8,22 +8,22 @@ namespace PetroTech.Main.Infa.Extensions
 {
     public static class EntityExtensions
     {
-        public static void MapDataUser(this UserServiceModel user, UserViewModel userViewModel)
+        public static void MapDataUser(this UserServiceModel userServiceModel, UserViewModel userViewModel)
         {
-            user.UserName = userViewModel.UserName;
-            user.FullName = userViewModel.FullName;
-            user.Email = userViewModel.Email;
-            user.PhoneNumber = userViewModel.PhoneNumber;
-            user.Address = userViewModel.Address;
-            user.City = userViewModel.City;
-            user.Area = userViewModel.Area;
-            user.Status = userViewModel.Status;
-            user.RoleName = userViewModel.RoleName;
-            user.DOB = userViewModel.DOB;
-            user.Department = userViewModel.Department;
-            user.RoleId = userViewModel.RoleId;
+            userServiceModel.UserName = userViewModel.UserName;
+            userServiceModel.FullName = userViewModel.FullName;
+            userServiceModel.Email = userViewModel.Email;
+            userServiceModel.PhoneNumber = userViewModel.PhoneNumber;
+            userServiceModel.Address = userViewModel.Address;
+            userServiceModel.City = userViewModel.City;
+            userServiceModel.Area = userViewModel.Area;
+            userServiceModel.Status = userViewModel.Status;
+            userServiceModel.RoleName = userViewModel.RoleName;
+            userServiceModel.DOB = userViewModel.DOB;
+            userServiceModel.Department = userViewModel.Department;
+            userServiceModel.RoleId = userViewModel.RoleId;
 
-            user.Functions = userViewModel.Functions.Select(x => new FunctionServiceModel
+            userServiceModel.Functions = userViewModel.Functions.Select(x => new FunctionServiceModel
             {
                 Controller = x.Controller,
                 FunctionId = x.FunctionId,
@@ -46,6 +46,13 @@ namespace PetroTech.Main.Infa.Extensions
             user.Status = userServiceModel.Status;
             user.DOB = userServiceModel.DOB;
             user.Department = userServiceModel.Department;
+        }
+
+        public static void MappingDataRole(this RoleServiceModel roleServiceModel, RoleViewModel roleViewModel)
+        {
+            roleServiceModel.RoleId = roleViewModel.RoleId;
+            roleServiceModel.RoleName = roleViewModel.RoleName;
+            roleServiceModel.RoleCode = roleViewModel.RoleCode;
         }
     }
 }
