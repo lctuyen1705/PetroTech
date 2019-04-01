@@ -109,10 +109,9 @@ D:\PetroTech\PetroTech.Data\bin\Debug\EntityFramework.SqlServer.xml
 D:\PetroTech\PetroTech.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 D:\PetroTech\PetroTech.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\PetroTech\PetroTech.Data\obj\Debug\PetroTech.Data.csprojAssemblyReference.cache
-D:\PetroTech\PetroTech.Data\obj\Debug\PetroTech.Data.Migrations._11032019222.resources
-D:\PetroTech\PetroTech.Data\obj\Debug\PetroTech.Data.Migrations._14032019.resources
-D:\PetroTech\PetroTech.Data\obj\Debug\PetroTech.Data.csproj.GenerateResource.cache
 D:\PetroTech\PetroTech.Data\obj\Debug\PetroTech.Data.csproj.CoreCompileInputs.cache
 D:\PetroTech\PetroTech.Data\obj\Debug\PetroTech.Data.csproj.CopyComplete
 D:\PetroTech\PetroTech.Data\obj\Debug\PetroTech.Data.dll
 D:\PetroTech\PetroTech.Data\obj\Debug\PetroTech.Data.pdb
+D:\PetroTech\PetroTech.Data\obj\Debug\PetroTech.Data.Migrations.tuyenlc.resources
+D:\PetroTech\PetroTech.Data\obj\Debug\PetroTech.Data.csproj.GenerateResource.cache

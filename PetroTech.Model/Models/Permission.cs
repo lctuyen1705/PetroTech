@@ -16,7 +16,7 @@ namespace PetroTech.Model.Models
         public Guid FunctionId { get; set; }
 
         [Required]
-        public Guid RoleId { get; set; }
+        public string UserName { get; set; }
 
         [Required]
         public bool IsPermisstion { get; set; }
@@ -24,7 +24,7 @@ namespace PetroTech.Model.Models
         [ForeignKey("FunctionId")]
         public virtual Function Function { get; set; }
 
-        [ForeignKey("RoleId")]
-        public virtual Role Role { get; set; }
+        [ForeignKey("UserName")]
+        public virtual User User { get; set; }
     }
 }

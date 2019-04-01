@@ -107,9 +107,7 @@ D:\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Data.dll
 D:\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Model.dll
 D:\PetroTech\PetroTech.Service\bin\Debug\System.ComponentModel.Annotations.dll
 D:\PetroTech\PetroTech.Service\bin\Debug\System.ValueTuple.dll
-D:\PetroTech\PetroTech.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 D:\PetroTech\PetroTech.Service\bin\Debug\EntityFramework.dll
-D:\PetroTech\PetroTech.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
 D:\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Common.pdb
 D:\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Data.pdb
 D:\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Data.dll.config
@@ -118,9 +116,7 @@ D:\PetroTech\PetroTech.Service\bin\Debug\PetroTech.Model.dll.config
 D:\PetroTech\PetroTech.Service\bin\Debug\AutoMapper.pdb
 D:\PetroTech\PetroTech.Service\bin\Debug\AutoMapper.xml
 D:\PetroTech\PetroTech.Service\bin\Debug\System.ValueTuple.xml
-D:\PetroTech\PetroTech.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\PetroTech\PetroTech.Service\bin\Debug\EntityFramework.xml
-D:\PetroTech\PetroTech.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 D:\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.csprojAssemblyReference.cache
 D:\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.csproj.CoreCompileInputs.cache
 D:\PetroTech\PetroTech.Service\obj\Debug\PetroTech.Service.csproj.CopyComplete

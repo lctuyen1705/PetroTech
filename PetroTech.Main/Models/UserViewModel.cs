@@ -5,11 +5,7 @@ namespace PetroTech.Main.Models
 {
     public class UserViewModel
     {
-        public string UserId { get; set; }
-
         public string UserName { get; set; }
-
-        public string UserCode { get; set; }
 
         public string RoleName { get; set; }
 
@@ -19,11 +15,11 @@ namespace PetroTech.Main.Models
 
         public string Email { get; set; }
 
-        public DateTime? DOB { get; set; }
+        public DateTime DOB { get; set; }
 
         public string PhoneNumber { get; set; }
 
-        public bool PhoneNumberConfirmed { get; set; }
+        public string Department { get; set; }
 
         public string Address { get; set; }
 
@@ -33,14 +29,6 @@ namespace PetroTech.Main.Models
 
         public string Status { get; set; }
 
-        public bool IsSystemAccount { get; set; }
-
-        public int AccessFailedCount { get; set; }
-
-        public bool LockoutEnabled { get; set; }
-
-        public DateTime LockoutEndDateUtc { get; set; }
-
-        public List<FunctionViewModel> Functions { get; set; }
+        public IEnumerable<FunctionViewModel> Functions { get; set; }
     }
 }

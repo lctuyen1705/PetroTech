@@ -12,7 +12,7 @@ namespace PetroTech.Main.Mapping
             Mapper.Initialize(cfg =>
             {
                 cfg.CreateMap<UserServiceModel, UserViewModel>();
-                cfg.CreateMap<ApplicationUser, UserServiceModel>();
+                cfg.CreateMap<User, UserServiceModel>();
             });
         }
     }

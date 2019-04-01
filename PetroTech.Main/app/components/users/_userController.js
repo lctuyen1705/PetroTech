@@ -20,27 +20,67 @@
     function _userController($scope, apiservice, notificationService) {
 
         $scope.users = [];
-        $scope.page = 0;
         $scope.pagesCount = 0;
-        $scope.pageSize = 1;
-        $scope.getListUsers = getListUsers;
+        $scope.pageSize = 5;
         $scope.keyword = '';
-        $scope.search = search;
+        $scope.usernameVal = '';
+        $scope.areaVal = '';
+        $scope.departmentVal = '';
+        $scope.statusVal = '';
 
-        $scope.item = 1;
-        $scope.nums = [1, 10, 50];
+        $scope.param = {
+            UserName: null,
+            Area: null,
+            Department: null,
+            Status: null
+        };
 
-        function search() {
-            getListUsers();
-        }
+        $scope.item = 5;
+        $scope.nums = [5, 10, 50];
 
-        function getListUsers(page) {
-            page = page || 0;
+        $scope.status = {
+            statusId: '',
+            statusName: 'Tất cả'
+        };
+        $scope.statusList = [
+            { 'statusId': '', 'statusName': 'Tất cả' },
+            { 'statusId': 'A', 'statusName': 'Active' },
+            { 'statusId': 'I', 'statusName': 'Inactive' }
+        ];
+
+        $scope.area = {
+            areaId: '',
+            areaName: 'Tất cả'
+        };
+        $scope.areas = [
+            { 'areaId': '', 'areaName': 'Tất cả' },
+            { 'areaId': 'North', 'areaName': 'Chi nhánh Hà Nội' },
+            { 'areaId': 'Central', 'areaName': 'Chi nhánh Đà Nẵng' },
+            { 'areaId': 'HCMC', 'areaName': 'Chi nhánh Hồ Chí Minh' },
+            { 'areaId': 'Mekong', 'areaName': 'Chi nhánh Cần Thơ' }
+        ];
+
+        $scope.department = {
+            departmentId: '',
+            departmentName: 'Tất cả'
+        };
+        $scope.departments = [
+            { 'departmentId': '', 'departmentName': 'Tất cả' },
+            { 'departmentId': 'KD', 'departmentName': 'Phòng Kinh Doanh' },
+            { 'departmentId': 'HC', 'departmentName': 'Phòng Hành Chính' },
+        ];
+
+        $scope.SearchUser = function () {
+            $scope.page = $scope.page || 0;
             var config = {
                 params: {
                     keyword: $scope.keyword,
-                    page: page,
-                    pageSize: $scope.item
+                    page: $scope.page,
+                    pageSize: $scope.item,
+                    usernameVal: $scope.usernameVal,
+                    areaVal: $scope.areaVal,
+                    departmentVal: $scope.departmentVal,
+                    statusVal: $scope.statusVal,
                 }
             };
 
@@ -56,7 +96,7 @@
 
             });
         }
-        $scope.getListUsers();
+
     }
 
 })(angular.module('petrotech.user'));

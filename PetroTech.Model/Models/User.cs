@@ -13,9 +13,6 @@ namespace PetroTech.Model.Models
     public class User : CurrentBase
     {
         [Key]
-        public Guid UserId { get; set; }
-
-        [Required]
         public string UserName { get; set; }
 
         [Required]
@@ -26,6 +23,12 @@ namespace PetroTech.Model.Models
 
         [Required]
         public string PhoneNumber { get; set; }
+
+        [Required]
+        public DateTime DOB { get; set; }
+
+        [MaxLength(250)]
+        public string Department { get; set; }
 
         [MaxLength(250)]
         public string Address { get; set; }
@@ -39,11 +42,8 @@ namespace PetroTech.Model.Models
         [Required]
         public string Status { get; set; }
 
-        [Required]
-        public bool IsSystemAccount { get; set; }
-
-        public IEnumerable<UserPassword> UserPasswords { get; set; }
-
         public IEnumerable<UserRole> UserRoles { get; set; }
+
+        public IEnumerable<Permission> Permissions { get; set; }
     }
 }

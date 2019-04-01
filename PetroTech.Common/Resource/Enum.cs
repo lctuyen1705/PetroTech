@@ -25,6 +25,12 @@ namespace PetroTech.Common.Resource
 
                 [Description("Add new user falid!")]
                 STR_ADD_USER_FAILD = 3,
+
+                [Description("Update user successfully!")]
+                STR_UPDATE_SUCCESS = 4,
+
+                [Description("Update user falid!")]
+                STR_UPDATE_FAILD = 5,
             }
 
             public enum ValidationError
@@ -38,17 +44,17 @@ namespace PetroTech.Common.Resource
                 [Description("This User Name can't use")]
                 STR_USERNAME_CANNOTUSE = 3,
 
-                [Description("User Name can't use special character")]
-                STR_USERNAME_SPECIALCHAR = 4,
+                [Description("Email must be correct format account@bbpetro.com.vn")]
+                STR_EMAIL_FORMAT = 4,
 
-                [Description("Full Name can't use special character")]
-                STR_FULLNAME_SPECIALCHAR = 5,
+                [Description("Phone Number just can be number")]
+                STR_PHONE_FORMAT = 5,
 
-                [Description("Email must be correct format account@psd.com.vn")]
-                STR_EMAIL_FORMAT = 6,
+                [Description("This filed can't use special character")]
+                STR_SPECIALCHAR = 6,
 
-                [Description("Email must be more than 6 character")]
-                STR_EMAIL_LENGTH = 7,
+                [Description("Please select value")]
+                STR_SELECT = 7,
             }
         }
 
@@ -64,6 +70,27 @@ namespace PetroTech.Common.Resource
 
                 [Description("Email")]
                 CONST_EMAIL = 3,
+
+                [Description("PhoneNumber")]
+                CONST_PHONE = 4,
+
+                [Description("Area")]
+                CONST_AREA = 5,
+
+                [Description("Status")]
+                CONST_STATUS = 6,
+
+                [Description("Department")]
+                CONST_DEPARTMENT = 7,
+
+                [Description("Role")]
+                CONST_ROLE = 8,
+
+                [Description("Address")]
+                CONST_ADDRESS = 9,
+
+                [Description("City")]
+                CONST_CITY = 10,
             }
 
             public enum ConstantEmailDomain

@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infa\Extensions\EntityExtensions.cs" />
     <Compile Include="Infa\PaginationSet.cs" />
     <Compile Include="Manager\FunctionService.cs" />
     <Compile Include="Manager\inter\InternalService.cs" />

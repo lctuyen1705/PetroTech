@@ -20,4 +20,15 @@
         }
     });
 
+    app.filter('departmentFilter', function () {
+        return function (input) {
+            if (input == 'KD') {
+                return 'Kinh Doanh';
+            }
+            if (input == 'HC') {
+                return 'Hành Chính';
+            }
+        }
+    });
+
 })(angular.module('petrotech.common'));

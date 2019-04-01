@@ -25,7 +25,7 @@
                     <div class="panel-body">
                         <div class="col-md-12">
                             <div class="bootstrap-table">
-                                <div class="pull-left search">
+                                <div class="search">
                                     <ul ng-repeat="err in listErrors">
                                         <li class="right">
                                             <div class="chat-body">
@@ -84,6 +84,10 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>{{'STR_MANAGE_USER_TABLE_TITLE_PHONENUMBER' | translate}}</label>
+                                        <input ng-model="user.PhoneNumber" type="tel" required class="form-control">
+                                    </div>
                                     <div class="form-group">
                                         <label>{{'STR_MANAGE_USER_TABLE_TITLE_ADDRESS' | translate}}</label>
                                         <input ng-model="user.Address" class="form-control" required>

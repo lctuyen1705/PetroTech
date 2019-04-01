@@ -13,6 +13,9 @@ namespace PetroTech.Model.Models
         [Required]
         public Guid RoleId { get; set; }
 
+        [ForeignKey("UserName")]
+        public virtual User User { get; set; }
+
         [ForeignKey("RoleId")]
         public virtual Role Role { get; set; }
     }

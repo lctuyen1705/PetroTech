@@ -40,11 +40,18 @@ namespace PetroTech.Main.WebApi
 
         [Route("getall")]
         [HttpGet]
-        public HttpResponseMessage Get(HttpRequestMessage request, string keyword, int page, int pageSize)
+        public HttpResponseMessage Get(HttpRequestMessage request,
+                                        string keyword,
+                                        int page,
+                                        int pageSize,
+                                        string usernameVal,
+                                        string areaVal,
+                                        string departmentVal,
+                                        string statusVal)
         {
             return CreateHttpResponse(request, () =>
             {
-                var model = _userService.GetAllUserPaging(keyword, page, pageSize);
+                var model = _userService.GetAllUserPaging(keyword, page, pageSize, usernameVal, areaVal, departmentVal, statusVal);
 
                 var query = Mapper.Map<IEnumerable<UserServiceModel>, IEnumerable<UserViewModel>>(model.Items);
 
@@ -85,7 +92,7 @@ namespace PetroTech.Main.WebApi
         {
             return CreateHttpResponse(request, () =>
             {
-                var model = _userService.ValidationUser(userName);
+                var model = _userService.ValidationUserName(userName);
 
                 HttpResponseMessage response = request.CreateResponse(HttpStatusCode.OK, model);
 
@@ -106,7 +113,7 @@ namespace PetroTech.Main.WebApi
 
                 modelService.MapDataUser(userViewModel);
 
-                var listErrors = _userService.AddNewUser(modelService);
+                var listErrors = _userService.ValidationUser(modelService, false);
 
                 if (listErrors.Count > 0)
                 {
@@ -127,13 +134,53 @@ namespace PetroTech.Main.WebApi
             });
         }
 
-        [Route("update")]
+        [Route("getbyuser/{id}")]
         [HttpGet]
+        public HttpResponseMessage GetUser(HttpRequestMessage request, string id)
+        {
+            return CreateHttpResponse(request, () =>
+            {         
+                var model = _userService.GetByUser(id);
+
+                var modelView = Mapper.Map<UserServiceModel, UserViewModel>(model);
+
+                HttpResponseMessage response = request.CreateResponse(HttpStatusCode.OK, modelView);
+
+                return response;
+            });
+        }
+
+        [Route("update")]
+        [HttpPut]
         public HttpResponseMessage Put(HttpRequestMessage request, UserViewModel userViewModel)
         {
-            HttpResponseMessage response = null;
+            return CreateHttpResponse(request, () =>
+            {
+                var modelService = new UserServiceModel();
 
-            return response;
+                var result = new ResultAPI<ErrorViewModel>();
+
+                modelService.MapDataUser(userViewModel);
+
+                var listErrors = _userService.ValidationUser(modelService, true);
+
+                if (listErrors.Count > 0)
+                {
+                    var data = Mapper.Map<List<ErrorServiceModel>, List<ErrorViewModel>>(listErrors);
+                    result.ListData = data;
+                    result.IsProcess = false;
+                    result.Mess = (Helper.Enum.Notification.STR_UPDATE_FAILD).GetDescription();
+                }
+                else
+                {
+                    result.IsProcess = true;
+                    result.Mess = (Helper.Enum.Notification.STR_UPDATE_SUCCESS).GetDescription();
+                }
+
+                HttpResponseMessage response = request.CreateResponse(HttpStatusCode.OK, result);
+
+                return response;
+            });
         }
     }
 }

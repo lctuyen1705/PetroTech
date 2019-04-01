@@ -16,7 +16,6 @@ using System.Web;
 using System.Web.ApplicationServices;
 using System.Web.Http;
 using System.Web.Mvc;
-using static PetroTech.Main.App_Start.IdentityConfig;
 
 [assembly: OwinStartup(typeof(PetroTech.Main.App_Start.Startup))]
 
@@ -28,7 +27,6 @@ namespace PetroTech.Main.App_Start
         {
             // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=316888
             ConfigAutofac(app);
-            ConfigureAuth(app);
         }
 
         private void ConfigAutofac(IAppBuilder app)
@@ -41,11 +39,8 @@ namespace PetroTech.Main.App_Start
             builder.RegisterType<PetroTechDbContext>().AsSelf().InstancePerRequest();
 
             //ASP.Net Identity
-            builder.RegisterType<ApplicationUserManager>().AsSelf().InstancePerRequest();
-            builder.RegisterType<ApplicationSignInManager>().AsSelf().InstancePerRequest();
             builder.Register<IAuthenticationManager>(c => HttpContext.Current.GetOwinContext().Authentication).InstancePerRequest();
             builder.Register<IDataProtectionProvider>(c => app.GetDataProtectionProvider()).InstancePerRequest();
-            builder.RegisterType<ApplicationUserStore>().As<IUserStore<ApplicationUser>>().InstancePerRequest();
 
             // Repositories
             builder.RegisterAssemblyTypes(typeof(UserRepository).Assembly)

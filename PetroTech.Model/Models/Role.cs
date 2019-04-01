@@ -12,10 +12,11 @@ namespace PetroTech.Model.Models
         public Guid RoleId { get; set; }
 
         [Required]
+        public string RoleCode { get; set; }
+
+        [Required]
         public string RoleName { get; set; }
 
         public virtual IEnumerable<UserRole> UserRoles { get; set; }
-
-        public virtual IEnumerable<Permission> Permissions { get; set; }
     }
 }

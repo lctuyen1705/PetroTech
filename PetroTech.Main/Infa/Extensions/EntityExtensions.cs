@@ -10,7 +10,6 @@ namespace PetroTech.Main.Infa.Extensions
     {
         public static void MapDataUser(this UserServiceModel user, UserViewModel userViewModel)
         {
-            user.UserId = userViewModel.UserId;
             user.UserName = userViewModel.UserName;
             user.FullName = userViewModel.FullName;
             user.Email = userViewModel.Email;
@@ -19,12 +18,10 @@ namespace PetroTech.Main.Infa.Extensions
             user.City = userViewModel.City;
             user.Area = userViewModel.Area;
             user.Status = userViewModel.Status;
-            user.IsSystemAccount = userViewModel.IsSystemAccount;
-            user.LockoutEnabled = userViewModel.LockoutEnabled;
-            user.LockoutEndDateUtc = userViewModel.LockoutEndDateUtc;
             user.RoleName = userViewModel.RoleName;
-            user.PhoneNumberConfirmed = userViewModel.PhoneNumberConfirmed;
             user.DOB = userViewModel.DOB;
+            user.Department = userViewModel.Department;
+            user.RoleId = userViewModel.RoleId;
 
             user.Functions = userViewModel.Functions.Select(x => new FunctionServiceModel
             {
@@ -37,10 +34,8 @@ namespace PetroTech.Main.Infa.Extensions
             });
         }
 
-        public static void MappingServiceToDataModelOfUser(this ApplicationUser user, UserServiceModel userServiceModel)
+        public static void MappingServiceToDataModelOfUser(this User user, UserServiceModel userServiceModel)
         {
-            user.Id = Guid.NewGuid().ToString();
-            user.UserCode = userServiceModel.UserCode;
             user.UserName = userServiceModel.UserName;
             user.FullName = userServiceModel.FullName;
             user.Email = userServiceModel.Email;
@@ -49,11 +44,8 @@ namespace PetroTech.Main.Infa.Extensions
             user.City = userServiceModel.City;
             user.Area = userServiceModel.Area;
             user.Status = userServiceModel.Status;
-            user.IsSystemAccount = userServiceModel.IsSystemAccount;
-            user.LockoutEnabled = userServiceModel.LockoutEnabled;
-            user.LockoutEndDateUtc = userServiceModel.LockoutEndDateUtc;
-            user.PhoneNumberConfirmed = userServiceModel.PhoneNumberConfirmed;
             user.DOB = userServiceModel.DOB;
+            user.Department = userServiceModel.Department;
         }
     }
 }

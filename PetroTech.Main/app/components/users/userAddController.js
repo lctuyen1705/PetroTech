@@ -17,6 +17,7 @@
             RoleId: null,
             Status: null,
             Department: null,
+            PhoneNumber: null,
             Functions: []
         };
 
@@ -49,12 +50,8 @@
             readonly: true
         };
         $scope.departments = [
-            { 'departmentId': 'TC-KT', 'departmentName': 'Phòng Tài Chính Kế Toán' },
-            { 'departmentId': 'HC-NS', 'departmentName': 'Phòng Hành Chính Nhân Sự' },
-            { 'departmentId': 'PTHT-KD', 'departmentName': 'Phòng Phân tích và Hỗ trợ Kinh Doanh' },
-            { 'departmentId': 'KH-GH', 'departmentName': 'Bộ phận Kho và Giao Hàng' },
-            { 'departmentId': 'KD-DA', 'departmentName': 'Phòng Kinh Doanh Dự Án' },
-            { 'departmentId': 'KD-IT', 'departmentName': 'Phòng Kinh Doanh IT' }
+            { 'departmentId': 'KD', 'departmentName': 'Phòng Kinh Doanh' },
+            { 'departmentId': 'HC', 'departmentName': 'Phòng Hành Chính' },
         ];
 
         $scope.client = {

@@ -61,13 +61,9 @@
     <Compile Include="Infa\IUnitOfWork.cs" />
     <Compile Include="Infa\RepositoryBase.cs" />
     <Compile Include="Infa\UnitOfWork.cs" />
-    <Compile Include="Migrations\201903120255337_11032019222.cs" />
-    <Compile Include="Migrations\201903120255337_11032019222.Designer.cs">
-      <DependentUpon>201903120255337_11032019222.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201903140742424_14032019.cs" />
-    <Compile Include="Migrations\201903140742424_14032019.Designer.cs">
-      <DependentUpon>201903140742424_14032019.cs</DependentUpon>
+    <Compile Include="Migrations\201903300428076_tuyenlc.cs" />
+    <Compile Include="Migrations\201903300428076_tuyenlc.Designer.cs">
+      <DependentUpon>201903300428076_tuyenlc.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PetroTechDbContext.cs" />
@@ -94,11 +90,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201903120255337_11032019222.resx">
-      <DependentUpon>201903120255337_11032019222.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201903140742424_14032019.resx">
-      <DependentUpon>201903140742424_14032019.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201903300428076_tuyenlc.resx">
+      <DependentUpon>201903300428076_tuyenlc.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
