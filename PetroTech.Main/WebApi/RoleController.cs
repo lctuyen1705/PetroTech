@@ -14,6 +14,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using PetroTech.Common.Resource;
+using System.Web.Script.Serialization;
 
 namespace PetroTech.Main.WebApi
 {
@@ -78,6 +79,30 @@ namespace PetroTech.Main.WebApi
                 else
                 {
                     var model = _roleService.DeleteRole(id);
+
+                    response = request.CreateResponse(HttpStatusCode.OK, model);
+                }
+
+                return response;
+            });
+        }
+
+        [Route("delmulti")]
+        [HttpDelete]
+        public HttpResponseMessage DelMulti(HttpRequestMessage request, string checkedRole)
+        {
+            return CreateHttpResponse(request, () =>
+            {
+                HttpResponseMessage response = null;
+                if (!ModelState.IsValid)
+                {
+                    response = request.CreateResponse(HttpStatusCode.BadRequest, ModelState);
+                }
+                else
+                {
+                    var listIds = new JavaScriptSerializer().Deserialize<List<string>>(checkedRole);
+
+                    var model = _roleService.DeleteRoleMulti(listIds);
 
                     response = request.CreateResponse(HttpStatusCode.OK, model);
                 }

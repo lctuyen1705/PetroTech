@@ -31,6 +31,7 @@
                             <div class="bootstrap-table">
                                 <div class="pull-left search">
                                     <a ui-sref="role-add" class="btn btn-md btn-info"><em class="fa fa-plus"></em>&nbsp;&nbsp;{{'STR_BUTTOM_ADD' | translate}}</a>
+                                    <button class="btn btn-md btn-danger" id="btnDelete" ng-click="deleteMulti()" disabled><em class="fa fa-user-slash"></em>&nbsp;&nbsp;{{'STR_BUTTOM_DELETE' | translate}}</button>
                                 </div>
                             </div>
                         </div>
@@ -49,7 +50,7 @@
                                         <tr>
                                             <th>
                                                 <label>
-                                                    <input type="checkbox" value="">
+                                                    <input ng-click="selectAll()" name="all" type="checkbox">
                                                 </label>
                                             </th>
                                             <th>{{'STR_MANAGE_ROLE_TABLE_TITLE_ROLECODE' | translate}}</th>
@@ -64,7 +65,7 @@
                                         <tr ng-repeat="role in roles">
                                             <td>
                                                 <label>
-                                                    <input type="checkbox" value="">
+                                                    <input ng-model="role.checked" type="checkbox" name="all">
                                                 </label>
                                             </td>
                                             <td>{{role.RoleCode}}</td>

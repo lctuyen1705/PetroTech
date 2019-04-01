@@ -14,7 +14,8 @@
     "ocLazyLoad": "~1.1.0",
     "bootbox": "~5.0.0",
     "ngBootbox": "~0.2.0",
-    "angular-guid": "~0.1.2"
+    "angular-guid": "~0.1.2",
+    "angular-file-upload": "~2.5.0"
   },
   "resolutions": {
     "angular": "^1.5.3"

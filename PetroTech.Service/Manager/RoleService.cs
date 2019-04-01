@@ -21,6 +21,7 @@ namespace PetroTech.Service.Manager
         IEnumerable<RoleServiceModel> GetListRoles();
         PaginationSet<RoleServiceModel> GetAllRolePaging(string keyword, int page, int pageSize, string rolenameVal);
         ResultAPI<bool> DeleteRole(string id);
+        ResultAPI<bool> DeleteRoleMulti(List<string> ids);
         ResultAPI<string> ValidationRoleCode(string roleCode);
         List<ErrorServiceModel> AddNewRole(RoleServiceModel model, bool isUpdate);
         void Save();
@@ -109,6 +110,26 @@ namespace PetroTech.Service.Manager
                 rs.IsProcess = true;
                 rs.Mess = (Helper.Enum.Notification.STR_DELETE_ROLE_SUCCESS).GetDescription();
                 _roleRepository.DeleteMulti(x => x.RoleCode.Contains(id));
+            }
+
+            Save();
+            return rs;
+        }
+
+        public ResultAPI<bool> DeleteRoleMulti(List<string> ids)
+        {
+            var rs = new ResultAPI<bool>();
+            rs.Mess = (Helper.Enum.Notification.STR_DELETE_ROLE_FAILD).GetDescription();
+            rs.IsProcess = false;
+
+            if (ids.Count() > 0 && ids != null)
+            {
+                foreach (var id in ids)
+                {
+                    _roleRepository.DeleteMulti(x => x.RoleCode.Contains(id));
+                }
+                rs.IsProcess = true;
+                rs.Mess = (Helper.Enum.Notification.STR_DELETE_ROLE_SUCCESS).GetDescription();
             }
 
             Save();

@@ -1,7 +1,7 @@
 ﻿(function (app) {
     app.controller('_roleController', _roleController);
 
-    _roleController.$inject = ['$scope', 'apiservice', 'notificationService', '$ngBootbox'];
+    _roleController.$inject = ['$scope', 'apiservice', 'notificationService', '$ngBootbox', '$filter'];
 
     app.directive('myEnter', function () {
         return function (scope, element, attrs) {
@@ -17,7 +17,7 @@
         };
     });
 
-    function _roleController($scope, apiservice, notificationService, $ngBootbox) {
+    function _roleController($scope, apiservice, notificationService, $ngBootbox, $filter) {
 
         $scope.roles = [];
         $scope.page = 0;
@@ -63,7 +63,7 @@
         $scope.deleteRole = deleteRole;
 
         function deleteRole(id) {
-            $ngBootbox.confirm('Are you sure for delete this role?').then(function () {
+            $ngBootbox.confirm('Are you sure for delete this role ?').then(function () {
                 var config = {
                     params: {
                         id: id
@@ -81,6 +81,58 @@
                 })
             });
         }
+
+        $scope.isAll = false;
+
+        $scope.selectAll = function () {
+            if ($scope.isAll === false) {
+                angular.forEach($scope.roles, function (role) {
+                    role.checked = true;
+                });
+                $scope.isAll = true;
+            } else {
+                angular.forEach($scope.roles, function (role) {
+                    role.checked = false;
+                });
+                $scope.isAll = false;
+            }
+        }
+
+        $scope.deleteMulti = function () {
+            $ngBootbox.confirm('Are you sure for delete those roles ?').then(function () {
+                var listId = [];
+                $.each($scope.selected, function (i, role) {
+                    listId.push(role.RoleCode);
+                });
+
+                var config = {
+                    params: {
+                        checkedRole: JSON.stringify(listId)
+                    }
+                }
+                apiservice.del('api/role/delmulti', config, function (result) {
+                    if (result.data.IsProcess) {
+                        notificationService.displaySuccess(result.data.Mess);
+                        SearchRole();
+                    } else {
+                        notificationService.displayWarning(result.data.Mess);
+                    }
+                }, function (error) {
+                    notificationService.displayError(error);
+                })
+            });
+        }
+
+        $scope.$watch("roles", function (n, o) {
+            var checked = $filter("filter")(n, { checked: true });
+
+            if (checked.length) {
+                $scope.selected = checked;
+                $('#btnDelete').removeAttr('disabled');
+            } else {
+                $('#btnDelete').attr('disabled', 'disabled');
+            }
+        }, true);
 
         $scope.getListRoles();
     }
