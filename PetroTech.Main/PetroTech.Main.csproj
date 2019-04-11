@@ -93,6 +93,12 @@
     <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
     </Reference>
+    <Reference Include="Nager.AmazonProductAdvertising, Version=1.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nager.AmazonProductAdvertising.1.2.2\lib\net461\Nager.AmazonProductAdvertising.dll</HintPath>
+    </Reference>
+    <Reference Include="Nager.ArticleNumber, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nager.ArticleNumber.1.0.3\lib\net461\Nager.ArticleNumber.dll</HintPath>
+    </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
@@ -226,9 +232,7 @@
     <Content Include="app\components\users\userAddView.html" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
@@ -243,11 +247,11 @@
     <Compile Include="Models\FunctionViewModel.cs" />
     <Compile Include="Models\map\FuncRoleViewModelList.cs" />
     <Compile Include="Models\map\FuncRoleViewModel.cs" />
+    <Compile Include="Models\Param.cs" />
     <Compile Include="Models\RoleViewModel.cs" />
     <Compile Include="Models\UserViewModel.cs" />
     <Compile Include="Models\ValidationViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebApi\AccountController.cs" />
     <Compile Include="WebApi\RoleController.cs" />
     <Compile Include="WebApi\UserController.cs" />
   </ItemGroup>
@@ -262,6 +266,7 @@
     <Content Include="app\shared\modal\modalController.js" />
     <Content Include="app\shared\modal\modalView.html" />
     <Content Include="app\shared\services\apiservice.js" />
+    <Content Include="app\shared\services\commonService.js" />
     <Content Include="app\shared\services\notificationService.js" />
     <Content Include="Assets\admin\css\bootstrap-table.css" />
     <Content Include="Assets\admin\css\bootstrap-theme.css" />
@@ -291,6 +296,28 @@
     <Content Include="Assets\admin\libs\angular-animate\angular-animate.js" />
     <Content Include="Assets\admin\libs\angular-animate\angular-animate.min.js" />
     <Content Include="Assets\admin\libs\angular-animate\index.js" />
+    <Content Include="Assets\admin\libs\angular-file-upload\.gitignore" />
+    <Content Include="Assets\admin\libs\angular-file-upload\dist\angular-file-upload.js" />
+    <Content Include="Assets\admin\libs\angular-file-upload\dist\angular-file-upload.min.js" />
+    <Content Include="Assets\admin\libs\angular-file-upload\gulpfile.js" />
+    <Content Include="Assets\admin\libs\angular-file-upload\license.txt" />
+    <Content Include="Assets\admin\libs\angular-file-upload\src\directives\FileDrop.js" />
+    <Content Include="Assets\admin\libs\angular-file-upload\src\directives\FileOver.js" />
+    <Content Include="Assets\admin\libs\angular-file-upload\src\directives\FileSelect.js" />
+    <Content Include="Assets\admin\libs\angular-file-upload\src\index.js" />
+    <Content Include="Assets\admin\libs\angular-file-upload\src\services\FileDirective.js" />
+    <Content Include="Assets\admin\libs\angular-file-upload\src\services\FileDrop.js" />
+    <Content Include="Assets\admin\libs\angular-file-upload\src\services\FileItem.js" />
+    <Content Include="Assets\admin\libs\angular-file-upload\src\services\FileLikeObject.js" />
+    <Content Include="Assets\admin\libs\angular-file-upload\src\services\FileOver.js" />
+    <Content Include="Assets\admin\libs\angular-file-upload\src\services\FileSelect.js" />
+    <Content Include="Assets\admin\libs\angular-file-upload\src\services\FileUploader.js" />
+    <Content Include="Assets\admin\libs\angular-file-upload\src\services\Pipeline.js" />
+    <Content Include="Assets\admin\libs\angular-file-upload\src\values\options.js" />
+    <Content Include="Assets\admin\libs\angular-file-upload\WebpackConfig.js" />
+    <Content Include="Assets\admin\libs\angular-guid\.gitignore" />
+    <Content Include="Assets\admin\libs\angular-guid\guid.js" />
+    <Content Include="Assets\admin\libs\angular-guid\guid.min.js" />
     <Content Include="Assets\admin\libs\angular-route\angular-route.js" />
     <Content Include="Assets\admin\libs\angular-route\angular-route.min.js" />
     <Content Include="Assets\admin\libs\angular-route\index.js" />
@@ -515,6 +542,76 @@
     <Content Include="Assets\admin\libs\angular\angular.js" />
     <Content Include="Assets\admin\libs\angular\angular.min.js" />
     <Content Include="Assets\admin\libs\angular\index.js" />
+    <Content Include="Assets\admin\libs\bootbox\.gitignore" />
+    <Content Include="Assets\admin\libs\bootbox\dist\bootbox.all.min.js" />
+    <Content Include="Assets\admin\libs\bootbox\dist\bootbox.locales.min.js" />
+    <Content Include="Assets\admin\libs\bootbox\dist\bootbox.min.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\bootbox.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\bootbox.locales.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\ar.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\az.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\bg_BG.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\cs.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\da.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\de.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\el.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\en.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\es.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\et.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\eu.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\fa.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\fi.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\fr.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\he.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\hr.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\hu.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\id.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\it.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\ja.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\ko.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\lt.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\lv.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\nl.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\no.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\pl.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\pt-br.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\pt.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\ru.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\sk.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\sl.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\sq.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\sv.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\th.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\tr.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\uk.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\zh_CN.js" />
+    <Content Include="Assets\admin\libs\bootbox\src\locales\zh_TW.js" />
+    <Content Include="Assets\admin\libs\checklist-model\checklist-model.js" />
+    <Content Include="Assets\admin\libs\ngBootbox\dist\ngBootbox.js" />
+    <Content Include="Assets\admin\libs\ngBootbox\dist\ngBootbox.min.js" />
+    <Content Include="Assets\admin\libs\ngBootbox\examples\example-1\app.js" />
+    <Content Include="Assets\admin\libs\ngBootbox\examples\example-1\custom-dialog.tpl.html" />
+    <Content Include="Assets\admin\libs\ngBootbox\examples\example-1\index.html" />
+    <Content Include="Assets\admin\libs\ngBootbox\examples\example-2\app.js" />
+    <Content Include="Assets\admin\libs\ngBootbox\examples\example-2\index.html" />
+    <Content Include="Assets\admin\libs\ngBootbox\examples\example-2\main.js" />
+    <Content Include="Assets\admin\libs\ngBootbox\examples\example-2\require.js" />
+    <Content Include="Assets\admin\libs\ngBootbox\examples\index.html" />
+    <Content Include="Assets\admin\libs\ngBootbox\gulpfile.js" />
+    <Content Include="Assets\admin\libs\ngBootbox\ngBootbox.js" />
+    <Content Include="Assets\admin\libs\ocLazyLoad\dist\modules\ocLazyLoad.core.js" />
+    <Content Include="Assets\admin\libs\ocLazyLoad\dist\modules\ocLazyLoad.directive.js" />
+    <Content Include="Assets\admin\libs\ocLazyLoad\dist\modules\ocLazyLoad.loaders.common.js" />
+    <Content Include="Assets\admin\libs\ocLazyLoad\dist\modules\ocLazyLoad.loaders.core.js" />
+    <Content Include="Assets\admin\libs\ocLazyLoad\dist\modules\ocLazyLoad.loaders.cssLoader.js" />
+    <Content Include="Assets\admin\libs\ocLazyLoad\dist\modules\ocLazyLoad.loaders.jsLoader.js" />
+    <Content Include="Assets\admin\libs\ocLazyLoad\dist\modules\ocLazyLoad.loaders.requireJSLoader.js" />
+    <Content Include="Assets\admin\libs\ocLazyLoad\dist\modules\ocLazyLoad.loaders.templatesLoader.js" />
+    <Content Include="Assets\admin\libs\ocLazyLoad\dist\modules\ocLazyLoad.polyfill.ie8.js" />
+    <Content Include="Assets\admin\libs\ocLazyLoad\dist\ocLazyLoad.js" />
+    <Content Include="Assets\admin\libs\ocLazyLoad\dist\ocLazyLoad.min.js" />
+    <Content Include="Assets\admin\libs\ocLazyLoad\dist\ocLazyLoad.require.js" />
+    <Content Include="Assets\admin\libs\ocLazyLoad\dist\ocLazyLoad.require.min.js" />
     <Content Include="Assets\admin\libs\toastr\toastr.css" />
     <Content Include="Assets\admin\libs\toastr\toastr.js" />
     <Content Include="Assets\admin\libs\toastr\toastr.min.css" />
@@ -885,6 +982,41 @@
     <Content Include="Assets\admin\libs\angular-route\LICENSE.md" />
     <Content Include="Assets\admin\libs\angular-route\package.json" />
     <Content Include="Assets\admin\libs\angular-route\README.md" />
+    <Content Include="Assets\admin\libs\ocLazyLoad\.bower.json" />
+    <Content Include="Assets\admin\libs\ocLazyLoad\bower.json" />
+    <Content Include="Assets\admin\libs\ocLazyLoad\CHANGELOG.md" />
+    <Content Include="Assets\admin\libs\ocLazyLoad\LICENSE.md" />
+    <Content Include="Assets\admin\libs\ocLazyLoad\README.md" />
+    <Content Include="Assets\admin\libs\bootbox\.bower.json" />
+    <Content Include="Assets\admin\libs\bootbox\.jshintrc" />
+    <Content Include="Assets\admin\libs\bootbox\.npmignore" />
+    <Content Include="Assets\admin\libs\bootbox\.travis.yml" />
+    <Content Include="Assets\admin\libs\bootbox\bower.json" />
+    <Content Include="Assets\admin\libs\bootbox\composer.json" />
+    <Content Include="Assets\admin\libs\bootbox\CONTRIBUTING.md" />
+    <Content Include="Assets\admin\libs\bootbox\dist\bootbox.zip" />
+    <Content Include="Assets\admin\libs\bootbox\LICENSE.md" />
+    <Content Include="Assets\admin\libs\bootbox\package-lock.json" />
+    <Content Include="Assets\admin\libs\bootbox\package.json" />
+    <Content Include="Assets\admin\libs\bootbox\README.md" />
+    <Content Include="Assets\admin\libs\ngBootbox\.bower.json" />
+    <Content Include="Assets\admin\libs\ngBootbox\bower.json" />
+    <Content Include="Assets\admin\libs\ngBootbox\package.json" />
+    <Content Include="Assets\admin\libs\ngBootbox\README.md" />
+    <Content Include="Assets\admin\libs\ngBootbox\tsd.json" />
+    <Content Include="Assets\admin\libs\angular-guid\.bower.json" />
+    <Content Include="Assets\admin\libs\angular-guid\bower.json" />
+    <Content Include="Assets\admin\libs\angular-guid\LICENSE" />
+    <Content Include="Assets\admin\libs\angular-guid\README.md" />
+    <Content Include="Assets\admin\libs\angular-file-upload\.babelrc" />
+    <Content Include="Assets\admin\libs\angular-file-upload\.bower.json" />
+    <Content Include="Assets\admin\libs\angular-file-upload\.jshintrc" />
+    <Content Include="Assets\admin\libs\angular-file-upload\bower.json" />
+    <Content Include="Assets\admin\libs\angular-file-upload\dist\angular-file-upload.js.map" />
+    <Content Include="Assets\admin\libs\angular-file-upload\dist\angular-file-upload.min.js.map" />
+    <Content Include="Assets\admin\libs\angular-file-upload\package.json" />
+    <Content Include="Assets\admin\libs\angular-file-upload\README.md" />
+    <Content Include="Assets\admin\libs\angular-file-upload\src\config.json" />
     <None Include="packages.config" />
     <Content Include="app\resources\lang-vn.json" />
     <Content Include="app\resources\lang-en.json" />
@@ -913,6 +1045,11 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Assets\admin\libs\ngBootbox\typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="Assets\admin\libs\ngBootbox\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Assets\admin\libs\ngBootbox\typings\tsd.d.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

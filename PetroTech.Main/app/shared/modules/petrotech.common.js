@@ -4,6 +4,10 @@
         'angularjs-datetime-picker',
         'ngRoute',
         'ngAnimate',
-        'ui.bootstrap'
+        'ui.bootstrap',
+        'oc.lazyLoad',
+        'checklist-model',
+        'ngBootbox',
+        'ngGuid'
     ])
 })();

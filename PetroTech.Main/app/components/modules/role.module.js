@@ -8,10 +8,6 @@
             url: "/role",
             templateUrl: "app/components/roles/_roleView.html",
             controller: "_roleController"
-        }).state('role-list', {
-            url: "/role-list",
-            templateUrl: "app/components/roles/roleListView.html",
-            controller: "roleListController"
         }).state('role-add', {
             url: "/role-add",
             templateUrl: "app/components/roles/roleAddView.html",

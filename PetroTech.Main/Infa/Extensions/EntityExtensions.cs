@@ -8,25 +8,22 @@ namespace PetroTech.Main.Infa.Extensions
 {
     public static class EntityExtensions
     {
-        public static void UpdateUser(this UserServiceModel user, UserViewModel userViewModel)
+        public static void MapDataUser(this UserServiceModel userServiceModel, UserViewModel userViewModel)
         {
-            user.UserId = userViewModel.UserId;
-            user.UserName = userViewModel.UserName;
-            user.FullName = userViewModel.FullName;
-            user.Email = userViewModel.Email;
-            user.PhoneNumber = userViewModel.PhoneNumber;
-            user.Address = userViewModel.Address;
-            user.City = userViewModel.City;
-            user.Area = userViewModel.Area;
-            user.Status = userViewModel.Status;
-            user.IsSystemAccount = userViewModel.IsSystemAccount;
-            user.LockoutEnabled = userViewModel.LockoutEnabled;
-            user.LockoutEndDateUtc = userViewModel.LockoutEndDateUtc;
-            user.RoleName = userViewModel.RoleName;
-            user.PhoneNumberConfirmed = userViewModel.PhoneNumberConfirmed;
-            user.DOB = userViewModel.DOB;
+            userServiceModel.UserName = userViewModel.UserName;
+            userServiceModel.FullName = userViewModel.FullName;
+            userServiceModel.Email = userViewModel.Email;
+            userServiceModel.PhoneNumber = userViewModel.PhoneNumber;
+            userServiceModel.Address = userViewModel.Address;
+            userServiceModel.City = userViewModel.City;
+            userServiceModel.Area = userViewModel.Area;
+            userServiceModel.Status = userViewModel.Status;
+            userServiceModel.RoleName = userViewModel.RoleName;
+            userServiceModel.DOB = userViewModel.DOB;
+            userServiceModel.Department = userViewModel.Department;
+            userServiceModel.RoleId = userViewModel.RoleId;
 
-            user.Funcs = userViewModel.Funcs.Select(x => new FunctionServiceModel
+            userServiceModel.Functions = userViewModel.Functions.Select(x => new FunctionServiceModel
             {
                 Controller = x.Controller,
                 FunctionId = x.FunctionId,
@@ -37,10 +34,8 @@ namespace PetroTech.Main.Infa.Extensions
             });
         }
 
-        public static void MappingServiceToDataModelOfUser(this ApplicationUser user, UserServiceModel userServiceModel)
+        public static void MappingServiceToDataModelOfUser(this User user, UserServiceModel userServiceModel)
         {
-            user.Id = Guid.NewGuid().ToString();
-            user.UserCode = userServiceModel.UserCode;
             user.UserName = userServiceModel.UserName;
             user.FullName = userServiceModel.FullName;
             user.Email = userServiceModel.Email;
@@ -49,11 +44,15 @@ namespace PetroTech.Main.Infa.Extensions
             user.City = userServiceModel.City;
             user.Area = userServiceModel.Area;
             user.Status = userServiceModel.Status;
-            user.IsSystemAccount = userServiceModel.IsSystemAccount;
-            user.LockoutEnabled = userServiceModel.LockoutEnabled;
-            user.LockoutEndDateUtc = userServiceModel.LockoutEndDateUtc;
-            user.PhoneNumberConfirmed = userServiceModel.PhoneNumberConfirmed;
             user.DOB = userServiceModel.DOB;
+            user.Department = userServiceModel.Department;
+        }
+
+        public static void MappingDataRole(this RoleServiceModel roleServiceModel, RoleViewModel roleViewModel)
+        {
+            roleServiceModel.RoleId = roleViewModel.RoleId;
+            roleServiceModel.RoleName = roleViewModel.RoleName;
+            roleServiceModel.RoleCode = roleViewModel.RoleCode;
         }
     }
 }

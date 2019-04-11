@@ -17,6 +17,7 @@
             RoleId: null,
             Status: null,
             Department: null,
+            PhoneNumber: null,
             Functions: []
         };
 
@@ -49,12 +50,8 @@
             readonly: true
         };
         $scope.departments = [
-            { 'departmentId': 'TC-KT', 'departmentName': 'Phòng Tài Chính Kế Toán' },
-            { 'departmentId': 'HC-NS', 'departmentName': 'Phòng Hành Chính Nhân Sự' },
-            { 'departmentId': 'PTHT-KD', 'departmentName': 'Phòng Phân tích và Hỗ trợ Kinh Doanh' },
-            { 'departmentId': 'KH-GH', 'departmentName': 'Bộ phận Kho và Giao Hàng' },
-            { 'departmentId': 'KD-DA', 'departmentName': 'Phòng Kinh Doanh Dự Án' },
-            { 'departmentId': 'KD-IT', 'departmentName': 'Phòng Kinh Doanh IT' }
+            { 'departmentId': 'KD', 'departmentName': 'Phòng Kinh Doanh' },
+            { 'departmentId': 'HC', 'departmentName': 'Phòng Hành Chính' },
         ];
 
         $scope.client = {
@@ -157,31 +154,31 @@
 
         });
 
+        $scope.modelError = 'none';
+
         $scope.AddNewUser = function () {
             apiservice.post('api/user/add', $scope.user,
                 function (result) {
-                    notificationService.displaySuccess(result.mess);
-                    $state.go('user');
+                    if (result.data.IsProcess) {
+                        notificationService.displaySuccess(result.data.Mess);
+                        $state.go('user');
+                    } else {
+                        $scope.modelError = 'block';
+                        notificationService.displayWarning(result.data.Mess);
+                        $scope.listErrors = result.data.ListData;
+                    }
                 }, function (error) {
-                    notificationService.displayError(error.mess);
+                    notificationService.displayError(error);
                 });
         };
 
-        $scope.loaderStyle = 'none';
-        $scope.loaderCan = 'none';
-        $scope.loaderCannot = 'none'; 
-        $scope.mess = '';
-
+        $scope.loader = 'none';
 
         $scope.validateUserName = function () {
-            apiservice.get('api/user/checkUser?userName=' + $scope.user.UserName, null, function (result) {             
-                if (result.data) {
-                    $scope.loaderCannot = 'block';
-                    $scope.loaderCan = 'none';
-                } else {
-                    $scope.loaderCannot = 'none';
-                    $scope.loaderCan = 'block';
-                }
+            apiservice.get('api/user/checkuser?userName=' + $scope.user.UserName, null, function (result) {
+                $scope.rsMess = result.data.Mess;
+                $scope.loader = result.data.Data;
+                $scope.rsClass = result.data.Class;
             }, function () {
 
             });

@@ -20,7 +20,7 @@
         $urlRouterProvider.otherwise('/admin');
 
         $translateProvider.translations('en', {
-            STR_FOOTER_INFO: 'Copyright of PSD © 2019 developed by',
+            STR_FOOTER_INFO: 'Copyright of PetroTech © 2019 developed by',
 
             STR_BUTTOM_ADD: 'Add New',
             STR_BUTTOM_DELETE: 'Delete',
@@ -30,6 +30,7 @@
             STR_BUTTOM_BACK: 'Back',
             STR_BUTTOM_SAVE: 'Save',
             STR_BUTTOM_CLEAR: 'Clear',
+            STR_BUTTOM_SEARCH: 'Search',
 
             STR_STATUS_USER_A: 'Active',
             STR_STATUS_USER_I: 'InActive',
@@ -55,12 +56,17 @@
             STR_MANAGE_USER_TABLE_TITLE_DEPARTMENT: 'Department',
             STR_MANAGE_USER_ADD: 'Add New User',
             STR_MANAGE_USER_TABLE_TITLE_FUNCTIONLIST: 'Function list',
+            STR_MANAGE_USER_EDIT: 'Edit User',
 
             STR_MANAGE_ROLE: 'Manage Role',
             STR_MANAGE_LIST_ROLE: 'List Roles',
-            STR_MANAGE_ROLE_TABLE_SEARCH: 'Search role name',
-            STR_MANAGE_ROLE_TABLE_TITLE_PHONENUMBER: 'Phone Number',
-            STR_MANAGE_ROLE_TABLE_TITLE_STATUS: 'Status',
+            STR_MANAGE_ROLE_TABLE_SEARCH: 'Search',
+            STR_MANAGE_ROLE_TABLE_TITLE_ROLEID: 'Role id',
+            STR_MANAGE_ROLE_TABLE_TITLE_ROLENAME: 'Role name',
+            STR_MANAGE_ROLE_TABLE_TITLE_ROLECODE: 'Role code',
+            STR_MANAGE_ROLE_TABLE_TITLE_LASTUPDATEDATETIME: 'Last updated time',
+            STR_MANAGE_ROLE_TABLE_TITLE_LASTUPDATEBY: 'Last updated by',
+            STR_MANAGE_ROLE_ADD: 'Add New Role',
 
             STR_MANAGE_DASHBOARD: 'Dashboard',
 
@@ -70,7 +76,7 @@
         });
         $translateProvider.translations('vn', {
 
-            STR_FOOTER_INFO: 'Bản quyền thuộc PSD © 2019 được phát triển bởi',
+            STR_FOOTER_INFO: 'Bản quyền thuộc PetroTech © 2019 được phát triển bởi',
 
             STR_BUTTOM_ADD: 'Thêm mới',
             STR_BUTTOM_DELETE: 'Xóa',
@@ -80,6 +86,7 @@
             STR_BUTTOM_BACK: 'Trở về',
             STR_BUTTOM_SAVE: 'Lưu',
             STR_BUTTOM_CLEAR: 'Dọn dẹp',
+            STR_BUTTOM_SEARCH: 'Tìm kiếm',
 
             STR_STATUS_USER_A: 'Hoạt động',
             STR_STATUS_USER_I: 'Ngưng hoạt động',
@@ -105,8 +112,17 @@
             STR_MANAGE_USER_TABLE_TITLE_DEPARTMENT: 'Bộ phận',
             STR_MANAGE_USER_ADD: 'Thêm mới người dùng',
             STR_MANAGE_USER_TABLE_TITLE_FUNCTIONLIST: 'Danh sách chức năng',
+            STR_MANAGE_USER_EDIT: 'Chỉnh sửa thông tin người dùng',
 
-            STR_MANAGE_ROLE: 'Quản lý quyền',
+            STR_MANAGE_ROLE: 'Quản lý cấp bậc',
+            STR_MANAGE_LIST_ROLE: 'Danh sách cấp bậc',
+            STR_MANAGE_ROLE_TABLE_SEARCH: 'Tim kiếm',
+            STR_MANAGE_ROLE_TABLE_TITLE_ROLEID: 'Mã cấp bậc',
+            STR_MANAGE_ROLE_TABLE_TITLE_ROLENAME: 'Tên cấp bậc',
+            STR_MANAGE_ROLE_TABLE_TITLE_ROLECODE: 'Mã code cấp bậc',
+            STR_MANAGE_ROLE_TABLE_TITLE_LASTUPDATEDATETIME: 'Thời gian cập nhật lần cuối',
+            STR_MANAGE_ROLE_TABLE_TITLE_LASTUPDATEBY: 'Cập nhật lần cuối bởi',
+            STR_MANAGE_ROLE_ADD: 'Thêm mới cấp bậc',
 
             STR_MANAGE_DASHBOARD: 'Thống kê',
 

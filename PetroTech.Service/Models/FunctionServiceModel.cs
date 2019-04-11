@@ -13,7 +13,7 @@ namespace PetroTech.Service.Models
         public string FunctionType { get; set; }
 
         public string FunctionName { get; set; }
-       
+
         public string ModuleCode { get; set; }
 
         public string Controller { get; set; }

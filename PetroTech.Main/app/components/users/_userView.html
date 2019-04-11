@@ -17,96 +17,131 @@
     </div><!--/.row-->
     <div class="row" ng-controller="_userController">
         <div class="col-lg-12">
-            <div class="panel panel-default">
-                <div class="panel-body btn-margins">
-                    <div class="col-md-12">
-                        <div class="bootstrap-table">
-                            <div class="pull-left search">
-                                <a ui-sref="user-add" class="btn btn-md btn-info"><em class="fa fa-plus"></em>&nbsp;&nbsp;{{'STR_BUTTOM_ADD' | translate}}</a>
-                                <button class="btn btn-md btn-default" type="button" ng-click="open()"><em class="fa fa-file-import"></em>&nbsp;&nbsp;{{'STR_BUTTOM_IMPORT' | translate}}</button>
-                                <button class="btn btn-md btn-default" type="button"><em class="fa fa-file-export"></em>&nbsp;&nbsp;{{'STR_BUTTOM_EXPORT' | translate}}</button>
-                            </div>
-                            <div class="pull-right search">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- /.panel-->
-            <div class="panel panel-default">
-                <div class="panel-heading">{{'STR_MANAGE_LIST_USER' | translate}}</div>
-                <div class="panel-body btn-margins">
-                    <div class="col-md-12">
-                        <div class="bootstrap-table">
-                            <div class="pull-right search">
-                                <input ng-model="keyword" my-enter="search()" class="form-control" type="text" placeholder="{{'STR_MANAGE_USER_TABLE_SEARCH' | translate}}">
-                            </div>
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            <label>
-                                                <input type="checkbox" value="">
-                                            </label>
-                                        </th>
-                                        <th>{{'STR_MANAGE_USER_TABLE_TITLE_USERNAME' | translate}}</th>
-                                        <th>{{'STR_MANAGE_USER_TABLE_TITLE_FULLNAME' | translate}}</th>
-                                        <th>{{'STR_MANAGE_USER_TABLE_TITLE_AREA' | translate}}</th>
-                                        <th>{{'STR_MANAGE_USER_TABLE_TITLE_PHONENUMBER' | translate}}</th>
-                                        <th>{{'STR_MANAGE_USER_TABLE_TITLE_STATUS' | translate}}</th>
-                                        <th>{{'STR_MANAGE_USER_TABLE_TITLE_ISSYSTEMACCOUNT' | translate}}</th>
-                                        <th>{{'STR_MANAGE_USER_TABLE_ROLENAME' | translate}}</th>
-                                        <th>{{'STR_MANAGE_USER_TABLE_TITLE_ACCESSFAILEDCOUNT' | translate}}</th>
-                                        <th>{{'STR_MANAGE_USER_TABLE_TITLE_LOCKACCOUNT' | translate}}</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr ng-repeat="user in users">
-                                        <td>
-                                            <label>
-                                                <input type="checkbox" value="">
-                                            </label>
-                                        </td>
-                                        <td>{{user.UserName}}</td>
-                                        <td>{{user.FullName}}</td>
-                                        <td>{{user.Area}}</td>
-                                        <td>{{user.PhoneNumber}}</td>
-                                        <td>
-                                            <span ng-class="{'btn-sm btn-danger':user.Status == 'I','btn-sm btn-success':user.Status == 'A'}">
-                                                {{user.Status | statusUserFilter}}
-                                            </span>
-                                        </td>
-                                        <td>{{user.IsSystemAccount | statusFilter}}</td>
-                                        <td>{{user.RoleName}}</td>
-                                        <td>{{user.AccessFailedCount}}</td>
-                                        <td>{{user.LockoutEnabled | statusFilter}}</td>
-                                        <td>
-                                            <label>
-                                                <button type="button" class="btn btn-sm btn-default"><em class="fa fa-edit"></em></button>
-                                            </label>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="fixed-table-pagination">
-                                <div class="pull-left pagination-detail">
-                                    <span class="pagination-info">
-                                        Showing&nbsp;{{totalCount}}&nbsp;rows
-                                    </span>
-                                    <span class="page-list">
-                                        <div class="btn-group dropup">
-                                            <select ng-model="item" ng-options="item for item in nums" ng-change="search()"></select>
-                                            <span hidden>{{item}}</span>
-                                        </div>
-                                        &nbsp;records&nbsp;per&nbsp;page
-                                    </span>
+            <form role="form" ng-submit="SearchUser()">
+                <div class="panel panel-default">
+                    <div class="panel-body btn-margins">
+                        <div class="col-md-12">
+                            <div class="bootstrap-table">
+                                <div class="pull-left search">
+                                    <a ui-sref="user-add" class="btn btn-md btn-info"><em class="fa fa-plus"></em>&nbsp;&nbsp;{{'STR_BUTTOM_ADD' | translate}}</a>
+                                    <button class="btn btn-md btn-default" type="button" ng-click="open()"><em class="fa fa-file-import"></em>&nbsp;&nbsp;{{'STR_BUTTOM_IMPORT' | translate}}</button>
+                                    <button class="btn btn-md btn-default" type="button"><em class="fa fa-file-export"></em>&nbsp;&nbsp;{{'STR_BUTTOM_EXPORT' | translate}}</button>
+                                </div>
+                                <div class="pull-right search">
+                                    <button class="btn btn-md btn-info" type="submit"><em class="fa fa-search"></em>&nbsp;&nbsp;{{'STR_BUTTOM_SEARCH' | translate}}</button>
                                 </div>
                             </div>
-                            <pager-directive page="{{page}}" custom-path="{{customPath}}" pages-count="{{pagesCount}}" total-count="{{totalCount}}" search-func="getListUsers(page)"></pager-directive>
                         </div>
                     </div>
-                </div>
-            </div><!-- /.panel-->
+                </div><!-- /.panel-->
+
+                <div class="panel panel-default">
+                    <div class="panel-body btn-margins">
+                        <div class="col-md-12">
+                            <div class="bootstrap-table">
+                                <div class="search">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>{{'STR_MANAGE_USER_TABLE_TITLE_USERNAME' | translate}}</label>
+                                            <input ng-model="usernameVal" class="form-control" placeholder="Search">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>{{'STR_MANAGE_USER_TABLE_TITLE_DEPARTMENT' | translate}}</label>
+                                            <select ng-model="departmentVal" ng-options="department.departmentId as department.departmentName for department in departments" class="form-control"></select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>{{'STR_MANAGE_USER_TABLE_TITLE_STATUS' | translate}}</label>
+                                            <select ng-model="statusVal" ng-options="status.statusId as status.statusName for status in statusList" class="form-control"></select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>{{'STR_MANAGE_USER_TABLE_TITLE_AREA' | translate}}</label>
+                                            <select ng-model="areaVal" ng-options="area.areaId as area.areaName for area in areas" class="form-control"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.panel-->
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">{{'STR_MANAGE_LIST_USER' | translate}}</div>
+                    <div class="panel-body btn-margins">
+                        <div class="col-md-12">
+                            <div class="bootstrap-table">
+                                <div class="pull-right search">
+                                    <input ng-model="keyword" my-enter="SearchUser()" class="form-control" type="text" placeholder="{{'STR_MANAGE_USER_TABLE_SEARCH' | translate}}">
+                                </div>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                </label>
+                                            </th>
+                                            <th>{{'STR_MANAGE_USER_TABLE_TITLE_USERNAME' | translate}}</th>
+                                            <th>{{'STR_MANAGE_USER_TABLE_TITLE_FULLNAME' | translate}}</th>
+                                            <th>{{'STR_MANAGE_USER_TABLE_TITLE_AREA' | translate}}</th>
+                                            <th>{{'STR_MANAGE_USER_TABLE_TITLE_PHONENUMBER' | translate}}</th>
+                                            <th>{{'STR_MANAGE_USER_TABLE_TITLE_STATUS' | translate}}</th>
+                                            <th>{{'STR_MANAGE_USER_TABLE_TITLE_EMAIL' | translate}}</th>
+                                            <th>{{'STR_MANAGE_USER_TABLE_TITLE_DEPARTMENT' | translate}}</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="user in users">
+                                            <td>
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                </label>
+                                            </td>
+                                            <td>{{user.UserName}}</td>
+                                            <td>{{user.FullName}}</td>
+                                            <td>{{user.Area}}</td>
+                                            <td>{{user.PhoneNumber}}</td>
+                                            <td>
+                                                <span ng-class="{'btn-sm btn-danger':user.Status == 'I','btn-sm btn-success':user.Status == 'A'}">
+                                                    {{user.Status | statusUserFilter}}
+                                                </span>
+                                            </td>
+                                            <td>{{user.Email}}</td>
+                                            <td>{{user.Department | departmentFilter}}</td>
+                                            <td>
+                                                <label>
+                                                    <button type="button" class="btn btn-sm btn-default" ui-sref="user-edit({id:user.UserName})"><em class="fa fa-edit"></em></button>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="fixed-table-pagination">
+                                    <div class="pull-left pagination-detail">
+                                        <span class="pagination-info">
+                                            Showing&nbsp;{{totalCount}}&nbsp;rows
+                                        </span>
+                                        <span class="page-list">
+                                            <div class="btn-group dropup">
+                                                <select ng-model="item" ng-options="item for item in nums" ng-change="SearchUser()"></select>
+                                                <span hidden>{{item}}</span>
+                                            </div>
+                                            &nbsp;records&nbsp;per&nbsp;page
+                                        </span>
+                                    </div>
+                                </div>
+                                <pager-directive page="{{page}}" custom-path="{{customPath}}" pages-count="{{pagesCount}}" total-count="{{totalCount}}" search-func="getListUsers(page)"></pager-directive>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.panel-->
+            </form>
         </div><!-- /.col-->
     </div>
 </div>

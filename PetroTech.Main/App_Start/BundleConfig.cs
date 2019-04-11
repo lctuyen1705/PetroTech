@@ -26,6 +26,11 @@ namespace PetroTech.Main
                         "~/Assets/admin/libs/angularjs-datetime-picker/angularjs-datetime-picker.js",
                         "~/Assets/admin/libs/angular-animate/angular-animate.js",
                         "~/Assets/admin/libs/angular-route/angular-route.js",
+                        "~/Assets/admin/libs/ocLazyLoad/dist/ocLazyLoad.js",
+                        "~/Assets/admin/libs/checklist-model/checklist-model.js",
+                        "~/Assets/admin/libs/bootbox/src/bootbox.js",
+                        "~/Assets/admin/libs/ngBootbox/ngBootbox.js",
+                        "~/Assets/admin/libs/angular-guid/guid.js",
                         "~/Assets/admin/libs/angular-ui-router/release/angular-ui-router.js"));
 
             //modules
@@ -41,6 +46,7 @@ namespace PetroTech.Main
             //service
             bundles.Add(new ScriptBundle("~/app/shared/services").Include(
                     "~/app/shared/services/notificationService.js",
+                    "~/app/shared/services/commonService.js",
                     "~/app/shared/services/apiservice.js"));
 
             //user
